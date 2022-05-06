@@ -24,3 +24,7 @@ Route::get('/test', function () {
 Route::get('/browse', function () {
     return view('browse');
 });
+
+Route::get('/dashboard', function () {
+    return view('admin');
+});
