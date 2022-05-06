@@ -22,7 +22,7 @@
                 <div class="row g-3">
                     <div class="col-10 text-start">
                         <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s"
-                            src="{{asset('style/home/img/course.jpg')}}">
+                            src="{{asset('style/home/img/soon1.jpg')}}">
                     </div>
                 </div>
             </div>

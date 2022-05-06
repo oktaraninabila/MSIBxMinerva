@@ -95,6 +95,11 @@
             </div>
           </li>
           <li class="nav-item nav-profile dropdown">
+            <a class="nav-link" href="#">
+              {{ Auth::user()->name }}
+            </a>
+          </li>
+          <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="{{asset('style/admin/images/faces/face28.jpg')}}" alt="profile"/>
             </a>
@@ -103,7 +108,7 @@
                 <i class="ti-settings text-primary"></i>
                 Settings
               </a>
-              <a class="dropdown-item">
+              <a href="/logout" class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>

@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{asset('style/home/img/icon.png')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,8 +53,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="/" class="nav-item nav-link">Home</a>
-                        <a href="/jelajah" class="nav-item nav-link">Daftar Course</a>
+                        <a href="/" class="nav-item nav-link">Beranda</a>
+                        <a href="/jelajah" class="nav-item nav-link">Program Minerva</a>
                         <a href="#" class="nav-item nav-link">Tentang Kami</a>
                         <a href="#" class="nav-item nav-link">Kontak</a>
                         <!--<div class="nav-item dropdown">
@@ -65,9 +65,9 @@
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>-->
-                        <a href="contact.html" class="nav-item nav-link">Daftar</a>
+                        <a href="/jelajah" class="nav-item nav-link">Daftar</a>
                     </div>
-                    <a href="/dashboard" class="btn btn-primary py-2 px-4">Login</a>
+                    <a href="/login" class="btn btn-primary py-2 px-4">Login</a>
                 </div>
             </nav>
 

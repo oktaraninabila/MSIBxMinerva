@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PesertaController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,12 @@ Route::get('/jelajah', function () {
 Route::get('/detail-course', function () {
     return view('detail-course');
 });
+
+Route::get('/login',[AuthController::class,'login'])->name('login'); 
+Route::post('/loginprocess',[AuthController::class,'loginprocess'])->name('loginprocess'); 
+Route::get('/register',[AuthController::class,'register'])->name('register'); 
+Route::post('/registeradmin',[AuthController::class,'registeradmin'])->name('registeradmin'); 
+Route::get('/logout',[AuthController::class,'logout'])->name('logout'); 
 
 Route::get('/', function () {
     return view('home');

@@ -57,7 +57,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="overflow-hidden m-4">
-                        <img class="img-fluid" src="{{asset('style/home/img/course.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{asset('style/home/img/soon1.jpg')}}" alt="">
                     </div>
                     <h5 class="mb-0">International Webinar Center of Data Science 2022</h5>
                     <small>Data Intelligent</small>
@@ -69,9 +69,9 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="overflow-hidden m-4">
-                        <img class="img-fluid" src="{{asset('style/home/img/team-1.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{asset('style/home/img/soon.jpg')}}" alt="">
                     </div>
-                    <h5 class="mb-0">Full Name</h5>
+                    <h5 class="mb-0">International Webinar Center of Data Science 2022</h5>
                     <small>Data Intelligent</small>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href=""><small><b>More...</b></small></a>
@@ -81,9 +81,9 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="overflow-hidden m-4">
-                        <img class="img-fluid" src="{{asset('style/home/img/team-1.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{asset('style/home/img/soon.jpg')}}" alt="">
                     </div>
-                    <h5 class="mb-0">Full Name</h5>
+                    <h5 class="mb-0">International Webinar Center of Data Science 2022</h5>
                     <small>Data Intelligent</small>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href=""><small><b>More...</b></small></a>
@@ -93,9 +93,9 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="overflow-hidden m-4">
-                        <img class="img-fluid" src="{{asset('style/home/img/team-1.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{asset('style/home/img/soon.jpg')}}" alt="">
                     </div>
-                    <h5 class="mb-0">Full Name</h5>
+                    <h5 class="mb-0">International Webinar Center of Data Science 2022</h5>
                     <small>Data Intelligent</small>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href=""><small><b>More...</b></small></a>
