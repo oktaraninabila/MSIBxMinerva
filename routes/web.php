@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/peserta',[PesertaController::class,'index'])->name('peserta'); 
+Route::get('/peserta/1',[PesertaController::class,'index'])->name('peserta'); 
+Route::get('/1/daftar-webinar',[PesertaController::class,'daftarwebinar'])->name('daftarwebinar'); 
+Route::post('/insertdaftarwebinar',[PesertaController::class,'insertdaftarwebinar'])->name('insertdaftarwebinar'); 
 
 Route::get('/', function () {
     return view('main');

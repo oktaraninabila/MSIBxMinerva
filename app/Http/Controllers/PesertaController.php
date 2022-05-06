@@ -11,4 +11,13 @@ class PesertaController extends Controller
         $data = Peserta::all();
         return view('data-peserta',compact('data'));
     }
+
+    public function daftarwebinar(){
+        return view('daftar-webinar');
+    }
+
+    public function insertdaftarwebinar(Request $request){
+        Peserta::create($request->all());
+        return redirect()-> route('daftarwebinar');
+    }
 }

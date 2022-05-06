@@ -4,13 +4,17 @@
 <div class="main-panel">
     <div class="content-wrapper">
       <div class="row">
+        <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+            <h3 class="font-weight-bold">Daftar Peserta Webinar</h3>
+            <h3 class="font-weight-bold">.</h3>
+          </div>
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Data Peserta Webinar</h4>
+        <!--<h4 class="card-title">Data Peserta Webinar</h4>
         <p class="card-description">
           Add class <code>.table-striped</code>
-        </p>
+        </p>-->
         <div class="table-responsive">
           <table class="table table-striped">
             <thead>

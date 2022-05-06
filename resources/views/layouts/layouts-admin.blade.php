@@ -154,7 +154,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/peserta/1">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Daftar Peserta</span>
             </a>
