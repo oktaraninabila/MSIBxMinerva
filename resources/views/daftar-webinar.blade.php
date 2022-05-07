@@ -91,5 +91,6 @@
             </div>
         </div>
         <!-- Reservation Start -->
+@include('sweetalert::alert')
 @endsection
         

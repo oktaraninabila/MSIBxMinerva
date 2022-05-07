@@ -15,7 +15,7 @@ class AuthController extends Controller
 
     public function loginprocess(Request $request){
         if(Auth::attempt($request->only('email','password'))){
-            return redirect('/dashboard');
+            return redirect('/dashboard')->with('toast_success', 'Selamat! Anda berhasil login');
         }
 
         return redirect('login');
@@ -33,7 +33,7 @@ class AuthController extends Controller
             'remember_token'    => Str::random(60)
         ]);
 
-        return redirect('/login');
+        return redirect('/login')->with('toast_success', 'Selamat! Akun anda telah terdaftar, silahkan login kembali');
     }
 
     public function logout(){

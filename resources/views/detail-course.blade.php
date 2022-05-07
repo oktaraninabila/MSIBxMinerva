@@ -60,4 +60,5 @@
     </div>
     </div>
     <!-- About End -->
+@include('sweetalert::alert')
 @endsection

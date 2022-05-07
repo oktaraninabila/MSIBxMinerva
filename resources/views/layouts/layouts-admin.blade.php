@@ -159,7 +159,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/peserta/1">
+            <a class="nav-link" href="/data-course">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Daftar Peserta</span>
             </a>
