@@ -170,6 +170,32 @@
               <span class="menu-title">Riwayat</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Category</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{route('categories')}}">List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('category.create')}}">Tambah Baru</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-second" aria-expanded="false" aria-controls="ui-second">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Post</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-second">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{route('post')}}">List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Tambah Baru</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </nav>
 
