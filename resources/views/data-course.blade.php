@@ -20,6 +20,42 @@
             </div>
         </div>
     </div>
+    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="team-item text-center rounded overflow-hidden">
+            <div class="overflow-hidden m-4">
+                <img class="img-fluid" src="{{asset('style/home/img/soon.jpg')}}" alt="">
+            </div>
+            <h5 class="mb-0">Coming Soon</h5>
+            <small>Data Intelligent</small>
+            <div class="d-flex justify-content-center mt-3">
+                <a class="btn btn-primary mx-1" href="#"><small><b>Lihat Peserta</b></small></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="team-item text-center rounded overflow-hidden">
+            <div class="overflow-hidden m-4">
+                <img class="img-fluid" src="{{asset('style/home/img/soon.jpg')}}" alt="">
+            </div>
+            <h5 class="mb-0">Coming Soon</h5>
+            <small>Data Intelligent</small>
+            <div class="d-flex justify-content-center mt-3">
+                <a class="btn btn-primary mx-1" href="#"><small><b>Lihat Peserta</b></small></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="team-item text-center rounded overflow-hidden">
+            <div class="overflow-hidden m-4">
+                <img class="img-fluid" src="{{asset('style/home/img/soon.jpg')}}" alt="">
+            </div>
+            <h5 class="mb-0">Coming Soon</h5>
+            <small>Data Intelligent</small>
+            <div class="d-flex justify-content-center mt-3">
+                <a class="btn btn-primary mx-1" href="#"><small><b>Lihat Peserta</b></small></a>
+            </div>
+        </div>
+    </div>
 </div>
       </div>
     </div>

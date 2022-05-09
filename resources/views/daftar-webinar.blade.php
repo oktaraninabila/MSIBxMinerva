@@ -2,14 +2,13 @@
 
 @section('content')
 
-<div class="container-xxl py-5 bg-dark hero-header mb-5">
+<div class="container-xxl py-5 bg-dark hero-header2 mb-5">
     <div class="container text-center my-5 pt-5 pb-4">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">Webinar</h1>
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Data Intelligence Course</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center text-uppercase">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item text-white active" aria-current="page">Webinar</li>
+                <li class="breadcrumb-item"><a href="#"><b>International Webinar Center of Data Science 2022</b>
+                    </a></li>                
             </ol>
         </nav>
     </div>
@@ -21,14 +20,12 @@
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
+                        
                     </div>
                 </div>
                 <div class="col-md-6 bg-dark d-flex align-items-center">
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Pendaftaran</h5>
                         <h1 class="text-white mb-4">Daftar Webinar</h1>
                         <form action="/insertdaftarwebinar" method="POST" enctype="multipart/form-data">
                             @csrf

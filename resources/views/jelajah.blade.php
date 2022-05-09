@@ -14,7 +14,7 @@
     </div>
 </div>
 </div>
-    <!-- Team Start -->
+<!-- Course Start -->
 <div class="container-xxl pt-5 pb-3">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -45,7 +45,7 @@
             <li class="nav-item">
                 <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill"
                     href="#tab-3">
-                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                    <i class="fa fa-user-tie fa-2x text-primary"></i>
                     <div class="ps-3">
                         <small class="text-body">General</small>
                         <h6 class="mt-n1 mb-0">Course</h6>
@@ -71,7 +71,9 @@
                     <div class="overflow-hidden m-4">
                         <img class="img-fluid" src="{{asset('style/home/img/soon.jpg')}}" alt="">
                     </div>
-                    <h5 class="mb-0">International Webinar Center of Data Science 2022</h5>
+                    <h5 class="mb-0">The Next Course</h5>
+                    <h5 class="mb-0">is Coming</h5>
+                    <h5 class="mb-0">Soon</h5>
                     <small>Data Intelligent</small>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href=""><small><b>More...</b></small></a>
@@ -83,7 +85,9 @@
                     <div class="overflow-hidden m-4">
                         <img class="img-fluid" src="{{asset('style/home/img/soon.jpg')}}" alt="">
                     </div>
-                    <h5 class="mb-0">International Webinar Center of Data Science 2022</h5>
+                    <h5 class="mb-0">The Next Course</h5>
+                    <h5 class="mb-0">is Coming</h5>
+                    <h5 class="mb-0">Soon</h5>
                     <small>Data Intelligent</small>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href=""><small><b>More...</b></small></a>
@@ -95,7 +99,9 @@
                     <div class="overflow-hidden m-4">
                         <img class="img-fluid" src="{{asset('style/home/img/soon.jpg')}}" alt="">
                     </div>
-                    <h5 class="mb-0">International Webinar Center of Data Science 2022</h5>
+                    <h5 class="mb-0">The Next Course</h5>
+                    <h5 class="mb-0">is Coming</h5>
+                    <h5 class="mb-0">Soon</h5>
                     <small>Data Intelligent</small>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href=""><small><b>More...</b></small></a>
@@ -105,5 +111,5 @@
         </div>
     </div>
     </div>
-    <!-- Team End -->
+<!-- Course End -->
 @endsection
