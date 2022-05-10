@@ -7,12 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+    use HasFactory;
     protected $fillable = [
         'title', 'content', 'category_id', 'featured'
     ];
 
-    public function posts()
+    public function category()
     {
-        return $this->belongsTo('App\Category');
+        return $this->belongsTo('App\Models\Category');
     }
 }

@@ -54,7 +54,21 @@
             </li>
         </ul>
         <div class="row g-4">
+            @foreach ($post as $item)
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="overflow-hidden m-4">
+                        <img class="img-fluid" src="{{asset($item->featured)}}" alt="{{ $item->title }}">
+                    </div>
+                    <h5 class="mb-0">{{ $item->title }}</h5>
+                    <small>{{ $item->category->name }}</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-primary mx-1" href="/detail-course"><small><b>More...</b></small></a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            {{-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="overflow-hidden m-4">
                         <img class="img-fluid" src="{{asset('style/home/img/soon1.jpg')}}" alt="">
@@ -107,7 +121,7 @@
                         <a class="btn btn-primary mx-1" href=""><small><b>More...</b></small></a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     </div>

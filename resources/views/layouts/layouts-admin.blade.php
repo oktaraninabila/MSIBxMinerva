@@ -153,10 +153,17 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" data-toggle="collapse" href="#ui-second" aria-expanded="false" aria-controls="ui-second">
               <i class="icon-layout menu-icon"></i>
-              <span class="menu-title">Program Class</span>
+              <span class="menu-title">Program & Event</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="ui-second">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{route('post')}}">List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('post.create')}}">Tambah Baru</a></li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/data-course">
@@ -183,19 +190,7 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-second" aria-expanded="false" aria-controls="ui-second">
-              <i class="icon-layout menu-icon"></i>
-              <span class="menu-title">Post</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-second">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{route('post')}}">List</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Tambah Baru</a></li>
-              </ul>
-            </div>
-          </li>
+          
         </ul>
       </nav>
 

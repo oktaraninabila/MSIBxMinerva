@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BrowseController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PesertaController;
@@ -26,14 +27,18 @@ Route::post('/category/update/{id}',[CategoryController::class,'update'])->name(
 Route::get('/category/delete/{id}',[CategoryController::class,'delete'])->name('category.delete');   
 
 Route::get('/post',[PostController::class,'index'])->name('post'); 
+Route::get('/post/create',[PostController::class,'create'])->name('post.create'); 
+Route::post('/post/store',[PostController::class,'store'])->name('post.store');
+Route::get('/post/edit/{id}',[PostController::class,'edit'])->name('post.edit');  
+Route::post('/post/update/{id}',[PostController::class,'update'])->name('post.update'); 
+Route::get('/post/delete/{id}',[PostController::class,'delete'])->name('post.delete');   
+
 Route::get('/dashboard',[AdminController::class,'admin'])->name('admin'); 
 Route::get('/peserta/1',[PesertaController::class,'index'])->name('peserta'); 
 Route::get('/1/daftar-webinar',[PesertaController::class,'daftarwebinar'])->name('daftarwebinar'); 
 Route::post('/insertdaftarwebinar',[PesertaController::class,'insertdaftarwebinar'])->name('insertdaftarwebinar'); 
 
-Route::get('/jelajah', function () {
-    return view('jelajah');
-});
+Route::get('/jelajah',[BrowseController::class,'index'])->name('jelajah'); 
 
 Route::get('/detail-course', function () {
     return view('detail-course');

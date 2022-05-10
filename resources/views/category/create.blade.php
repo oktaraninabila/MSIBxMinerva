@@ -12,7 +12,12 @@
                   @csrf
                   <div class="form-group">
                     <label for="name">Nama Kategori</label>
-                    <input type="text" class="form-control" name="name" placeholder="Nama Kategori">
+                    <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Nama Kategori">
+                    @error('name')
+                        <span class="invalid-feedback" role="alert">
+                          <strong>Nama Kategori harus diisi.</strong>
+                        </span>
+                    @enderror
                   </div>
                   <button type="submit" class="btn btn-primary mr-2">Submit</button>
                   <button class="btn btn-light">Cancel</button>
