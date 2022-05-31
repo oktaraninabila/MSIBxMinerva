@@ -44,6 +44,14 @@ Route::get('/detail-course', function () {
     return view('detail-course');
 });
 
+Route::get('/kontak', function () {
+    return view('kontak');
+});
+
+Route::get('/tentang-kami', function () {
+    return view('tentang-kami');
+});
+
 Route::get('/login',[AuthController::class,'login'])->name('login'); 
 Route::post('/loginprocess',[AuthController::class,'loginprocess'])->name('loginprocess'); 
 Route::get('/register',[AuthController::class,'register'])->name('register'); 

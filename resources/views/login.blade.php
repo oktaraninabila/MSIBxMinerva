@@ -51,10 +51,10 @@
           <a href="#" class="uf-social-ic" title="Login with Google"><i class="fab fa-google"></i></a>
         </div>
     -->
-        <div class="mt-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+        {{-- <div class="mt-4 text-center wow fadeInUp" data-wow-delay="0.5s">
           <span class="text-white">Belum punya akun?</span>
           <a href="/register">Daftar sekarang</a>
-        </div>
+        </div> --}}
       </form>
     </div>
 

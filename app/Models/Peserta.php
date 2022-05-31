@@ -9,5 +9,13 @@ class Peserta extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    // protected $guarded = [];
+    protected $fillable = [
+        'post_id', 'nama', 'email', 'notelp', 'instansi', 'domisili'
+    ];
+
+    public function posts()
+    {
+        return $this->belongsTo('App\Models\Post');
+    }
 }

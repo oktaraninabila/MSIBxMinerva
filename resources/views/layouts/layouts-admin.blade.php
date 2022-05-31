@@ -104,9 +104,9 @@
               <img src="{{asset('style/admin/images/faces/face28.jpg')}}" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
+              <a href="/register" class="dropdown-item">
                 <i class="ti-settings text-primary"></i>
-                Settings
+                Register
               </a>
               <a href="/logout" class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>

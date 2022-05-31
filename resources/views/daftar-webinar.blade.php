@@ -30,6 +30,15 @@
                         <form action="/insertdaftarwebinar" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row g-3">
+                                <div class="form-group">
+                                    <label for="post_id"></label>
+                                    <select name="post_id" class="form-control" value="{{ old('post_id')}}">
+                                        <option value="">Pilih Event</option>
+                                        @foreach ($post as $item)
+                                            <option value="{{ $item->id }}">{{ $item->title }}</option>
+                                        @endforeach
+                                      </select>
+                                  </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" name="nama" id="nama" placeholder="Your Name">
@@ -62,6 +71,9 @@
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Daftar Sekarang</button>
+                                </div>
+                                <div class="col-12">
+                                <a class="btn btn-secondary w-100 py-3" href="#">Konfirmasi Pembayaran</a>
                                 </div>
                             </div>
                         </form>

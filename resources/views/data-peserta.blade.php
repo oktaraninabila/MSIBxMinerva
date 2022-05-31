@@ -22,6 +22,7 @@
             <thead>
               <tr>
                 <th>No</th>
+                <th>Nama Event</th>
                 <th>Nama</th>
                 <th>Email</th>
                 <th>No. Telp</th>
@@ -33,6 +34,7 @@
             @foreach ($data as $item)
               <tr>
                 <td>{{ $item->id }}</td>
+                <td>{{ $item->post_id }}</td>
                 <td>{{ $item->nama }}</td>
                 <td>{{ $item->email }}</td>
                 <td>0{{ $item->notelp }}</td>

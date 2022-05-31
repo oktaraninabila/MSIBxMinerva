@@ -18,7 +18,7 @@ class AuthController extends Controller
             return redirect('/dashboard')->with('toast_success', 'Selamat! Anda berhasil login');
         }
 
-        return redirect('login');
+        return redirect('login')->with('toast_error', 'Maaf! Harap periksa kembali email atau password Anda');;
     }
 
     public function register(){

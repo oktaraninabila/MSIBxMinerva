@@ -51,14 +51,18 @@ class PostController extends Controller
     public function edit($id)
     {
         $post = Post::find($id);
-        return view('post.edit')->with('post', $post);
+        $category = Category::all();
+
+        return view('post.edit', compact('post', 'category'));
     }
 
     public function update(Request $request, $id)
     {
         $post = Post::find($id);
 
-        $post->name = $request->name;
+        $post->title = $request->title;
+        $post->category_id = $request->category_id;
+        $post->content = $request->content;
         $post->save();
 
         return redirect()->route('post');

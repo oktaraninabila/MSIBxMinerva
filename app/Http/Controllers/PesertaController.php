@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Peserta;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class PesertaController extends Controller
@@ -12,8 +13,10 @@ class PesertaController extends Controller
         return view('data-peserta',compact('data'));
     }
 
-    public function daftarwebinar(){
-        return view('daftar-webinar');
+    public function daftarwebinar()
+    {
+        $post = Post::all();
+        return view('daftar-webinar', compact('post'));
     }
 
     public function insertdaftarwebinar(Request $request){

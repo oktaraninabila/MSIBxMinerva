@@ -16,4 +16,9 @@ class Post extends Model
     {
         return $this->belongsTo('App\Models\Category');
     }
+
+    public function pesertas()
+    {
+        return $this->hasMany('App\Models\Peseta');
+    }
 }

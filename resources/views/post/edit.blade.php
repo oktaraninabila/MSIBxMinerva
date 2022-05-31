@@ -21,10 +21,14 @@
                   </div>
                   <div class="form-group">
                     <label for="category_id">Kategori</label>
-                    <select name="category_id" class="form-control @error('category_id') is-invalid @enderror" value="{{ $post->category}}">
+                    <select name="category_id" class="form-control @error('category_id') is-invalid @enderror" value="{{ $post->category_id}}">
                         <option value="">Pilih Kategori</option>
                         @foreach ($category as $item)
+                        @if ($post->category_id == $item->id)
                             <option value="{{ $item->id }}">{{ $item->name }}</option>
+                        @else
+                            <option value="{{ $item->id }}">{{ $item->name }}</option>
+                        @endif
                         @endforeach
                       </select>
                       @error('category_id')
@@ -34,7 +38,7 @@
                     @enderror
                   </div>
                   <div class="form-group">
-                    <label for="content">Konten</label>
+                    <label for="name">Konten</label>
                     <textarea class="form-control @error('content') is-invalid @enderror" value="{{ $post->content}}" name="content"></textarea>
                     @error('content')
                         <span class="invalid-feedback" role="alert">

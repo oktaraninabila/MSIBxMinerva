@@ -55,8 +55,8 @@
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="/" class="nav-item nav-link">Beranda</a>
                         <a href="/jelajah" class="nav-item nav-link">Program Minerva</a>
-                        <a href="#" class="nav-item nav-link">Tentang Kami</a>
-                        <a href="#" class="nav-item nav-link">Kontak</a>
+                        <a href="/tentang-kami" class="nav-item nav-link">Tentang Kami</a>
+                        <a href="/kontak" class="nav-item nav-link">Kontak</a>
                         <!--<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
@@ -65,9 +65,9 @@
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>-->
-                        <a href="/jelajah" class="nav-item nav-link">Daftar</a>
+                        {{-- <a href="/jelajah" class="nav-item nav-link">Daftar</a> --}}
                     </div>
-                    <a href="/login" class="btn btn-primary py-2 px-4">Login</a>
+                    {{-- <a href="/login" class="btn btn-primary py-2 px-4">Login</a> --}}
                 </div>
             </nav>
 
