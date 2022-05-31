@@ -22,15 +22,14 @@
                 <div class="row g-3">
                     <div class="col-10 text-start">
                         <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s"
-                            src="{{asset('style/home/img/soon1.jpg')}}">
+                            src="{{ asset($post->featured) }}">
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <h5 class="section-title ff-secondary text-start text-primary fw-normal">Data Intelligence Course</h5>
-                <h1 class="mb-4">International Webinar Center of Data Science 2022</h1>
-                <p class="mb-4">Center of Data Science (CDS) UII mengadakan agenda webinar bertaraf internasional pada 10-11 Desember 2021 lalu dengan tema “Data Science for Human Life”. Kegiatan ini dilaksanakan secara virtual melalui Zoom. Acara webinar internasional ini diisi oleh 4 orang pembicara, 2 dari internal Jurusan Informatika UII dan 2 pembicara eksternal.  </p>
-                <p class="mb-4">Pembicara pertama disampaikan oleh Dr. Ahmad Luthfi dari Universitas Islam Indonesia. Beliau adalah salah satu dosen Jurusan Informatika UII yang baru saja meraih gelar doktor di Delft University of Technology, Belanda. Beliau menyampaikan materi dengan topik “Data Science for Opening Government Data Decision Making”. Pada sesi pembicara kedua, materi disampaikan oleh Dr. Atika Qazi dari Universiti Brunei Darussalam dengan topik “Covid-19 and Applications of Data Analytics”.</p>
+                <h5 class="section-title ff-secondary text-start text-primary fw-normal">{{ $post->category->name }} Course</h5>
+                <h1 class="mb-4">{{ $post->title }}</h1>
+                <p class="mb-4">{{ $post->content }}</p>
                 <div class="row g-4 mb-4">
                     <div class="col-sm-6">
                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">

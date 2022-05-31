@@ -31,7 +31,9 @@ Route::get('/post/create',[PostController::class,'create'])->name('post.create')
 Route::post('/post/store',[PostController::class,'store'])->name('post.store');
 Route::get('/post/edit/{id}',[PostController::class,'edit'])->name('post.edit');  
 Route::post('/post/update/{id}',[PostController::class,'update'])->name('post.update'); 
-Route::get('/post/delete/{id}',[PostController::class,'delete'])->name('post.delete');   
+Route::get('/post/delete/{id}',[PostController::class,'delete'])->name('post.delete'); 
+
+// Route::get('/{id}',[BrowseController::class,'detail'])->name('detail'); 
 
 Route::get('/dashboard',[AdminController::class,'admin'])->name('admin'); 
 Route::get('/peserta/1',[PesertaController::class,'index'])->name('peserta'); 
@@ -39,10 +41,11 @@ Route::get('/1/daftar-webinar',[PesertaController::class,'daftarwebinar'])->name
 Route::post('/insertdaftarwebinar',[PesertaController::class,'insertdaftarwebinar'])->name('insertdaftarwebinar'); 
 
 Route::get('/jelajah',[BrowseController::class,'index'])->name('jelajah'); 
+Route::get('/{id}',[BrowseController::class,'singlePost'])->name('detail-course'); 
 
-Route::get('/detail-course', function () {
-    return view('detail-course');
-});
+// Route::get('/detail-course', function () {
+//     return view('detail-course');
+// });
 
 Route::get('/kontak', function () {
     return view('kontak');
