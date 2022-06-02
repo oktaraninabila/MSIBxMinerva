@@ -30,7 +30,19 @@
                         <form action="/insertdaftarwebinar" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row g-3">
-                                <div class="form-group">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="post_id" value="{{ old('post_id')}}">
+                                          <option value=" ">Nama Event</option>
+                                            @foreach ($post as $item)
+                                                <option value="{{ $item->id }}">{{ $item->title }}</option>
+                                            @endforeach
+                                        </select>
+                                        <label for="post_id">Pilih Event Yang Diikuti</label>
+                                    </div>
+                                </div>
+                                {{-- <div class="col-12">    
+                                  <div class="form-group">
                                     <label for="post_id"></label>
                                     <select name="post_id" class="form-control" value="{{ old('post_id')}}">
                                         <option value="">Pilih Event</option>
@@ -39,16 +51,17 @@
                                         @endforeach
                                       </select>
                                   </div>
+                                </div> --}}
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" name="nama" id="nama" placeholder="Your Name">
-                                        <label for="nama">Nama</label>
+                                        <label for="nama">Nama Lengkap</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
-                                        <label for="email">Email</label>
+                                        <label for="email">Email Aktif</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">

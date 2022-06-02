@@ -18,6 +18,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/login',[AuthController::class,'login'])->name('login'); 
+Route::post('/loginprocess',[AuthController::class,'loginprocess'])->name('loginprocess'); 
+Route::get('/register',[AuthController::class,'register'])->name('register'); 
+Route::post('/registeradmin',[AuthController::class,'registeradmin'])->name('registeradmin'); 
+Route::get('/logout',[AuthController::class,'logout'])->name('logout'); 
 
 Route::get('/categories',[CategoryController::class,'index'])->name('categories'); 
 Route::get('/category/create',[CategoryController::class,'create'])->name('category.create'); 
@@ -32,6 +37,8 @@ Route::post('/post/store',[PostController::class,'store'])->name('post.store');
 Route::get('/post/edit/{id}',[PostController::class,'edit'])->name('post.edit');  
 Route::post('/post/update/{id}',[PostController::class,'update'])->name('post.update'); 
 Route::get('/post/delete/{id}',[PostController::class,'delete'])->name('post.delete'); 
+Route::get('/kontak',[PostController::class,'kontak'])->name('kontak'); 
+Route::get('/tentang-kami',[PostController::class,'tentang'])->name('tentang-kami'); 
 
 // Route::get('/{id}',[BrowseController::class,'detail'])->name('detail'); 
 
@@ -42,24 +49,20 @@ Route::post('/insertdaftarwebinar',[PesertaController::class,'insertdaftarwebina
 
 Route::get('/jelajah',[BrowseController::class,'index'])->name('jelajah'); 
 Route::get('/{id}',[BrowseController::class,'singlePost'])->name('detail-course'); 
+Route::get('/program-minerva/{id}',[BrowseController::class,'category'])->name('category-course'); 
+
 
 // Route::get('/detail-course', function () {
 //     return view('detail-course');
 // });
 
-Route::get('/kontak', function () {
-    return view('kontak');
-});
+// Route::get('/kontak', function () {
+//     return view('kontak');
+// });
 
-Route::get('/tentang-kami', function () {
-    return view('tentang-kami');
-});
-
-Route::get('/login',[AuthController::class,'login'])->name('login'); 
-Route::post('/loginprocess',[AuthController::class,'loginprocess'])->name('loginprocess'); 
-Route::get('/register',[AuthController::class,'register'])->name('register'); 
-Route::post('/registeradmin',[AuthController::class,'registeradmin'])->name('registeradmin'); 
-Route::get('/logout',[AuthController::class,'logout'])->name('logout'); 
+// Route::get('/tentang-kami', function () {
+//     return view('tentang-kami');
+// });
 
 Route::get('/', function () {
     return view('home');

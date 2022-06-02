@@ -54,17 +54,18 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="/" class="nav-item nav-link">Beranda</a>
-                        <a href="/jelajah" class="nav-item nav-link">Program Minerva</a>
+                        <div class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Program Minerva</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="/jelajah" class="dropdown-item">Semua Program</a>
+                                <a href="#" class="dropdown-item">Data Analyst</a>
+                                <a href="#" class="dropdown-item">General Event</a>
+                            </div>
+                        </div>
+                        {{-- <a href="/jelajah" class="nav-item nav-link">Program Minerva</a> --}}
                         <a href="/tentang-kami" class="nav-item nav-link">Tentang Kami</a>
                         <a href="/kontak" class="nav-item nav-link">Kontak</a>
-                        <!--<div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item active">Booking</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div>-->
+                        
                         {{-- <a href="/jelajah" class="nav-item nav-link">Daftar</a> --}}
                     </div>
                     {{-- <a href="/login" class="btn btn-primary py-2 px-4">Login</a> --}}

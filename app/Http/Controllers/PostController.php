@@ -76,5 +76,15 @@ class PostController extends Controller
         return redirect()->route('post');
     }
 
+    public function kontak()
+    {
+        return view('kontak');
+    }
+
+    public function tentang()
+    {
+        return view('tentang-kami');
+    }
+
     
 }

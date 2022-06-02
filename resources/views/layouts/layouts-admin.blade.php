@@ -96,7 +96,7 @@
           </li>
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link" href="#">
-              {{-- {{ Auth::user()->name }} --}} Admin
+              {{ Auth::user()->name }}
             </a>
           </li>
           <li class="nav-item nav-profile dropdown">

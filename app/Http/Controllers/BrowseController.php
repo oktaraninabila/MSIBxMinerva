@@ -11,6 +11,7 @@ class BrowseController extends Controller
     public function index()
     {
         $post = Post::all();
+
         return view('jelajah', compact('post'));
     }
 
@@ -20,4 +21,12 @@ class BrowseController extends Controller
 
         return view('detail-course', compact('post'));
     }
+
+    public function category($id)
+    {
+        $category = Category::find($id);
+        $post = Post::where('category_id', '=', $id)->paginate(8);
+        return view('category', compact('category', 'post'));
+    }
+
 }

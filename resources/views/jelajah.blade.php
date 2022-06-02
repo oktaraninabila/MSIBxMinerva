@@ -61,7 +61,7 @@
                         <img class="img-fluid" src="{{asset($item->featured)}}" alt="{{ $item->title }}">
                     </div>
                     <h5 class="mb-0">{{ $item->title }}</h5>
-                    <small>{{ $item->category->name }}</small>
+                    <small><a href="{{ route('category-course', ['id' => $item->category_id])}}"> {{ $item->category->name }}</a></small>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href="{{ route('detail-course', ['id' => $item->id])}}"><small><b>More...</b></small></a>
                     </div>

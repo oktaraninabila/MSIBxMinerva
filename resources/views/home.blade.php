@@ -282,6 +282,9 @@
                         <div class="col-12">
                             <button class="btn btn-primary w-100 py-3" type="submit">Daftar Sekarang</button>
                         </div>
+                        <div class="col-12">
+                            <a class="btn btn-secondary w-100 py-3" href="#">Konfirmasi Pembayaran</a>
+                        </div>
                     </div>
                 </form>
             </div>
