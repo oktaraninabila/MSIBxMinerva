@@ -12,12 +12,58 @@
                   @csrf
                   <div class="form-group">
                     <label for="name">Nama Event</label>
-                    <input type="text" class="form-control @error('title') is-invalid @enderror" value="{{ $post->title}}" name="title" placeholder="Nama Event">
+                    <input type="text" class="form-control @error('title') is-invalid @enderror" value="{{ $post->title}}" name="title">
                     @error('title')
                         <span class="invalid-feedback" role="alert">
                           <strong>Nama event harus diisi.</strong>
                         </span>
                     @enderror
+                  </div>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label>Harga</label>
+                      <div id="price">
+                        <input type="text" class="form-control @error('price') is-invalid @enderror" value="{{ $post->price}}" name="price">
+                        @error('price')
+                          <span class="invalid-feedback" role="alert">
+                            <strong>Harga event harus diisi.</strong>
+                          </span>
+                        @enderror
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label>Jam</label>
+                      <div id="time">
+                        <input type="text" class="form-control @error('time') is-invalid @enderror" value="{{ $post->time}}" name="time">
+                        @error('time')
+                          <span class="invalid-feedback" role="alert">
+                            <strong>Harga event harus diisi.</strong>
+                          </span>
+                        @enderror
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label>Tanggal</label>
+                      <div id="date">
+                        <input type="text" class="form-control @error('date') is-invalid @enderror" value="{{ $post->date}}" name="date">
+                        @error('date')
+                          <span class="invalid-feedback" role="alert">
+                            <strong>Harga event harus diisi.</strong>
+                          </span>
+                        @enderror
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label>Bulan</label>
+                      <div id="month">
+                        <input type="text" class="form-control @error('month') is-invalid @enderror" value="{{ $post->month}}" name="month">
+                        @error('month')
+                          <span class="invalid-feedback" role="alert">
+                            <strong>Harga event harus diisi.</strong>
+                          </span>
+                        @enderror
+                      </div>
+                    </div>
                   </div>
                   <div class="form-group">
                     <label for="category_id">Kategori</label>
@@ -38,8 +84,8 @@
                     @enderror
                   </div>
                   <div class="form-group">
-                    <label for="name">Konten</label>
-                    <textarea class="form-control @error('content') is-invalid @enderror" value="{{ $post->content}}" name="content"></textarea>
+                    <label for="content">Konten</label>
+                    <textarea name="content" class="form-control @error('content') is-invalid @enderror" value="{{ $post->content}}"></textarea>
                     @error('content')
                         <span class="invalid-feedback" role="alert">
                           <strong>konten harus diisi.</strong>

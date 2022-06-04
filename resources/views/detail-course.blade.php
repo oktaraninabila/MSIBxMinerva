@@ -29,21 +29,22 @@
             <div class="col-lg-6">
                 <h5 class="section-title ff-secondary text-start text-primary fw-normal">{{ $post->category->name }} Course</h5>
                 <h1 class="mb-4">{{ $post->title }}</h1>
-                <p class="mb-4">{{ $post->content }}</p>
+                <p class="section-title ff-secondary text-start text-primary fw-normal">Harga: Rp. {{ $post->price }}</p>
+                <p class="mb-4 justify">{{ $post->content }}</p>
                 <div class="row g-4 mb-4">
                     <div class="col-sm-6">
                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15
+                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">{{ $post->date }}
                             </h1>
                             <div class="ps-4">
-                                <p class="mb-0">Mei</p>
+                                <p class="mb-0">{{ $post->month }}</p>
                                 <h6 class="text-uppercase mb-0">2022</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" >09:00
+                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" >{{ $post->time }}
                             </h1>
                             <div class="ps-4">
                                 <p class="mb-0">Waktu</p>

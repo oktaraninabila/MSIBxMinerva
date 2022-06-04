@@ -24,15 +24,20 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'title' => 'required',
-            'category_id' => 'required',
-            'content' => 'required'
+            'title'         => 'required',
+            'category_id'   => 'required',
+            'content'       => 'required'
         ]);
 
         $post = new Post();
         $post->title = $request->title;
         $post->category_id = $request->category_id;
         $post->content = $request->content;
+        $post->date = $request->date;
+        $post->month = $request->month;
+        $post->time = $request->time;
+        $post->price = $request->price;
+        
         
         $image_path = "";
         if($request->hasFile('featured')){
@@ -63,6 +68,10 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->category_id = $request->category_id;
         $post->content = $request->content;
+        $post->date = $request->date;
+        $post->month = $request->month;
+        $post->time = $request->time;
+        $post->price = $request->price;
         $post->save();
 
         return redirect()->route('post');

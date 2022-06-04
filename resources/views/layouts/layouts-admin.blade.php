@@ -177,9 +177,24 @@
               <span class="menu-title">Riwayat</span>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Category</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{route('categories')}}">List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('category.create')}}">Tambah Baru</a></li>
+              </ul>
+            </div>
+          </li>
+{{-- 
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="icon-layout menu-icon"></i>
+              <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Category</span>
               <i class="menu-arrow"></i>
             </a>
@@ -189,7 +204,7 @@
                 <li class="nav-item"> <a class="nav-link" href="{{route('category.create')}}">Tambah Baru</a></li>
               </ul>
             </div>
-          </li>
+          </li> --}}
           
         </ul>
       </nav>
