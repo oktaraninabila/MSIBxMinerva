@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/popup', function () {
+    return view('popup');
+});
+
+Route::get('/',[BrowseController::class,'home'])->name('home');
+
 Route::get('/login',[AuthController::class,'login'])->name('login'); 
 Route::post('/loginprocess',[AuthController::class,'loginprocess'])->name('loginprocess'); 
 Route::get('/register',[AuthController::class,'register'])->name('register'); 
@@ -64,9 +70,7 @@ Route::get('/program-minerva/{id}',[BrowseController::class,'category'])->name('
 //     return view('tentang-kami');
 // });
 
-Route::get('/', function () {
-    return view('home');
-});
+
 
 Route::get('/main', function () {
     return view('main');

@@ -38,6 +38,6 @@ class AuthController extends Controller
 
     public function logout(){
         Auth::logout();
-        return redirect('/')->with('toast_success', 'Logout Berhasil! Anda telah keluar dari akun Anda');;
+        return redirect('/')->with('toast_success', 'Logout Berhasil! Anda telah keluar dari akun Anda');
     }
 }

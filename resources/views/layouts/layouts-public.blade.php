@@ -31,7 +31,7 @@
     <!-- Template Stylesheet -->
     <link href="{{asset('style/home/css/style.css')}}" rel="stylesheet">
 </head>
-
+@yield ('popup')
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
@@ -140,6 +140,8 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+    
+    @yield('popupbanner')
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
