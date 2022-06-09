@@ -95,5 +95,11 @@ class PostController extends Controller
         return view('tentang-kami');
     }
 
+    public function riwayat()
+    {
+        $post = Post::all();
+        return view('riwayat', compact('post'));
+    }
+
     
 }

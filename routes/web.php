@@ -22,6 +22,10 @@ Route::get('/popup', function () {
     return view('popup');
 });
 
+Route::get('/data-course', function () {
+    return view('data-course');
+});
+
 Route::get('/',[BrowseController::class,'home'])->name('home');
 
 Route::get('/login',[AuthController::class,'login'])->name('login'); 
@@ -44,7 +48,8 @@ Route::get('/post/edit/{id}',[PostController::class,'edit'])->name('post.edit');
 Route::post('/post/update/{id}',[PostController::class,'update'])->name('post.update'); 
 Route::get('/post/delete/{id}',[PostController::class,'delete'])->name('post.delete'); 
 Route::get('/kontak',[PostController::class,'kontak'])->name('kontak'); 
-Route::get('/tentang-kami',[PostController::class,'tentang'])->name('tentang-kami'); 
+Route::get('/tentang-kami',[PostController::class,'tentang'])->name('tentang-kami');
+Route::get('/riwayat',[PostController::class,'riwayat'])->name('riwayat'); 
 
 // Route::get('/{id}',[BrowseController::class,'detail'])->name('detail'); 
 
@@ -72,18 +77,15 @@ Route::get('/program-minerva/{id}',[BrowseController::class,'category'])->name('
 
 
 
-Route::get('/main', function () {
-    return view('main');
-});
+// Route::get('/main', function () {
+//     return view('main');
+// });
 
-Route::get('/test', function () {
-    return view('layouts.main');
-});
+// Route::get('/test', function () {
+//     return view('layouts.main');
+// });
 
-Route::get('/browse', function () {
-    return view('browse');
-});
+// Route::get('/browse', function () {
+//     return view('browse');
+// });
 
-Route::get('/data-course', function () {
-    return view('data-course');
-});

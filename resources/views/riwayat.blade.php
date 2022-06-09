@@ -18,7 +18,7 @@
                 <th>Pukul</th>
                 <th>Tanggal</th>
                 <th>Poster</th>
-                <th>Aksi</th>
+                {{-- <th>Aksi</th> --}}
               </tr>
             </thead>
             <tbody>
@@ -33,9 +33,9 @@
                 <td>
                   <img src="{{ asset($item->featured)}}" alt="Image" style="width:200px; height:200px;">
                 </td>
-                <td><a href="{{ route('post.edit', ['id'=> $item->id ])}}" class="btn btn-m btn-info">Edit</a>
+                {{-- <td><a href="{{ route('post.edit', ['id'=> $item->id ])}}" class="btn btn-m btn-info">Edit</a>
                   <a href="{{ route('post.delete', ['id'=> $item->id ])}}" class="btn btn-m btn-danger">Delete</a>
-                </td>
+                </td> --}}
               </tr>
               @endforeach
             </tbody>
