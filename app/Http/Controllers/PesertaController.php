@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Peserta;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class PesertaController extends Controller
 {
@@ -21,6 +22,10 @@ class PesertaController extends Controller
 
     public function insertdaftarwebinar(Request $request){
         Peserta::create($request->all());
-        return redirect()-> route('daftarwebinar')->with('success', 'Selamat! Anda telah terdaftar dalam kursus ini');
+        alert()->html('Selamat! Anda Telah Terdaftar',"
+        Selanjutnya konfirmasi pembayaran pada link berikut,
+        <a href='//github.com'><b>klik di sini</b></a>
+        ",'success');
+        return redirect()-> route('daftarwebinar');
     }
 }

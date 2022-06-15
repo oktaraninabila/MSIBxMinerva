@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AuthController extends Controller
 {
@@ -15,10 +16,11 @@ class AuthController extends Controller
 
     public function loginprocess(Request $request){
         if(Auth::attempt($request->only('email','password'))){
-            return redirect('/dashboard')->with('toast_success', 'Selamat! Anda berhasil login');
+            Alert::success('Selamat!', 'Anda berhasil login');
+            return redirect('/dashboard');
         }
-
-        return redirect('login')->with('toast_error', 'Maaf! Harap periksa kembali email atau password Anda');;
+        Alert::error('Maaf!', 'Harap periksa kembali email atau password Anda');
+        return redirect('login');
     }
 
     public function register(){
@@ -32,12 +34,13 @@ class AuthController extends Controller
             'password'  => bcrypt($request->password),
             'remember_token'    => Str::random(60)
         ]);
-
-        return redirect('/login')->with('toast_success', 'Selamat! Akun anda telah terdaftar, silahkan login kembali');
+        Alert::success('Selamat!', 'Akun anda telah terdaftar, silahkan login kembali');
+        return redirect('/login');
     }
 
     public function logout(){
         Auth::logout();
-        return redirect('/')->with('toast_success', 'Logout Berhasil! Anda telah keluar dari akun Anda');
+        Alert::warning('Logout Berhasil!', 'Anda telah keluar dari akun Anda');
+        return redirect('/');
     }
 }

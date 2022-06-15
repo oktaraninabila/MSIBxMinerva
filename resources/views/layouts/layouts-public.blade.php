@@ -53,18 +53,18 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="/" class="nav-item nav-link">Beranda</a>
+                        <a href="{{ route('home') }}" class="nav-item nav-link">Beranda</a>
                         <div class="nav-item dropdown">
                             <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Program Minerva</a>
                             <div class="dropdown-menu m-0">
-                                <a href="/jelajah" class="dropdown-item">Semua Program</a>
+                                <a href="{{ route('jelajah')}}" class="dropdown-item">Semua Program</a>
                                 <a href="#" class="dropdown-item">Data Analyst</a>
                                 <a href="#" class="dropdown-item">General Event</a>
                             </div>
                         </div>
                         {{-- <a href="/jelajah" class="nav-item nav-link">Program Minerva</a> --}}
-                        <a href="/tentang-kami" class="nav-item nav-link">Tentang Kami</a>
-                        <a href="/kontak" class="nav-item nav-link">Kontak</a>
+                        <a href="{{ route('tentang-kami')}}" class="nav-item nav-link">Tentang Kami</a>
+                        <a href="{{ route('kontak')}}" class="nav-item nav-link">Kontak</a>
                         
                         {{-- <a href="/jelajah" class="nav-item nav-link">Daftar</a> --}}
                     </div>

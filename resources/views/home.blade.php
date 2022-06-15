@@ -15,20 +15,21 @@
         z-index:1000000;
     }
     .pop-content{
-        width:850px;
+        width:350px;
         height:450px;
+        text-align:center;
         display:block;
         position:absolute;
         top:50%;
         left:50%;
-        margin:-225px 0 0 -425px;
+        margin:-225px 0 0 -125px;
         z-index:2;
         box-shadow:0 3px 20px 0 rgba(0,0,0,.5);
     }
     .popcontent{
         width:100%;
         height:100%;d
-        isplay:block;
+        display:block;
         background:#fff;
         border-radius:5px;
         overflow:hidden
@@ -530,9 +531,9 @@
 <div class="popbox hide" id="popbox">
     <div aria-label='Close' class="pop-overlay" onclick='document.getElementById("popbox").style.display="none";removeClassonBody();' role="button" tabindex="0">
         <div class="pop-content">
-            <a href="#" target="_blank" rel="noopener noreferrer" title="box">
+            <a href="/7" target="_blank" rel="noopener noreferrer" title="box">
                 <div class="popcontent">
-                    <img src="{{asset('style/home/img/popup1.jpg')}}" alt="banner" width="100" height="450"/>
+                    <img src="{{asset('style/home/img/about-1.jpg')}}" alt="banner" width="100" height="450"/>
                 </div>
             </a>
         <button aria-label='Close' class='popbox-close-button' onclick='document.getElementById("popbox").style.display="none";removeClassonBody();'>&times;</button>
