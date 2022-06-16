@@ -57,16 +57,19 @@ Route::get('/dashboard',[AdminController::class,'admin'])->name('admin');
 Route::get('/peserta/1',[PesertaController::class,'index'])->name('peserta'); 
 Route::get('/1/daftar-webinar',[PesertaController::class,'daftarwebinar'])->name('daftarwebinar'); 
 Route::post('/insertdaftarwebinar',[PesertaController::class,'insertdaftarwebinar'])->name('insertdaftarwebinar'); 
+Route::get('/excel',[PesertaController::class,'excel'])->name('excel'); 
+
+Route::get('/program-minerva/{id}',[BrowseController::class,'category'])->name('category-course');
+Route::get('/program-minerva/1',[BrowseController::class,'category'])->name('category-1'); 
+Route::get('/program-minerva/2',[BrowseController::class,'category'])->name('category-2'); 
+Route::get('/program-minerva/3',[BrowseController::class,'category'])->name('category-3'); 
 
 Route::get('/jelajah',[BrowseController::class,'index'])->name('jelajah'); 
 Route::get('/{id}',[BrowseController::class,'singlePost'])->name('detail-course'); 
 Route::get('/7',[BrowseController::class,'singlePost'])->name('detail-course-7');
 Route::get('/11',[BrowseController::class,'singlePost'])->name('detail-course-11');
 
-Route::get('/program-minerva/{id}',[BrowseController::class,'category'])->name('category-course');
-Route::get('/program-minerva/1',[BrowseController::class,'category'])->name('category-1'); 
-Route::get('/program-minerva/2',[BrowseController::class,'category'])->name('category-2'); 
-Route::get('/program-minerva/3',[BrowseController::class,'category'])->name('category-3'); 
+
 
 
 // Route::get('/detail-course', function () {

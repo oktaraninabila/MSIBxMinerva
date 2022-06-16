@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\PesertaExport;
 use App\Models\Peserta;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
+use Maatwebsite\Excel\Facades\Excel;
 
 class PesertaController extends Controller
 {
@@ -27,5 +29,9 @@ class PesertaController extends Controller
         <a href='//github.com'><b>klik di sini</b></a>
         ",'success');
         return redirect()-> route('daftarwebinar');
+    }
+
+    public function excel(){
+        return Excel::download(new PesertaExport, 'peserta.xlsx');
     }
 }

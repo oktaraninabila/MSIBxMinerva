@@ -5,9 +5,13 @@
     <div class="content-wrapper">
       <div class="row">
         <div class="col-12 col-xl-12 mb-4 mb-xl-0">
-            <h3 class="text-center font-weight-bold">Daftar Peserta Webinar</h3>
+            <h3 class="text-center font-weight-bold">Daftar Peserta Event Minerva Indonesia</h3>
             <div class="d-flex justify-content mt-3">
-                <a class="btn btn-primary mx-1" href="/data-course"><small><b>Kembali</b></small></a>
+                {{-- <a class="btn btn-primary mx-1" href="{{ route('excel') }}"><small><b>Excel</b></small></a> --}}
+                <a type="button" class="btn btn-info btn-icon-text " href="{{ route('excel') }}">
+                  Export as Excel
+                  <i class="ti-printer btn-icon-append"></i>                                                                              
+                </a>
             </div>
           </div>
 <div class="col-lg-12 grid-margin stretch-card">

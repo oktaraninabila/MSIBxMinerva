@@ -4,10 +4,10 @@
 
 <div class="container-xxl py-5 bg-dark hero-header2 mb-5">
     <div class="container text-center my-5 pt-5 pb-4">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">Data Intelligence Course</h1>
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Minerva Indonesia</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center text-uppercase">
-                <li class="breadcrumb-item"><a href="#"><b>International Webinar Center of Data Science 2022</b>
+                <li class="breadcrumb-item"><a href="#"><b>Spirit of Collaboration and Learning</b>
                     </a></li>                
             </ol>
         </nav>
@@ -86,8 +86,9 @@
                                     <button class="btn btn-primary w-100 py-3" type="submit">Daftar Sekarang</button>
                                 </div>
                                 <div class="col-12">
-                                <a class="btn btn-secondary w-100 py-3" href="#">Konfirmasi Pembayaran</a>
+                                <a class="btn btn-secondary w-100 py-3" href="https://t.me/Grouppeserta">Gabung Grup Telegram</a>
                                 </div>
+                                <p class="text-white mb-2">*) Peserta yang telah mendaftar silahkan bergabung ke grup telegram di atas</p>
                             </div>
                         </form>
                     </div>
