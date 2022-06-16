@@ -8,9 +8,16 @@ use Illuminate\Http\Request;
 
 class BrowseController extends Controller
 {
+    // public function home()
+    // {
+    //     return view('home');
+    // }
+
     public function home()
     {
-        return view('home');
+        $post = Post::all();
+
+        return view('home', compact('post'));
     }
 
     public function index()

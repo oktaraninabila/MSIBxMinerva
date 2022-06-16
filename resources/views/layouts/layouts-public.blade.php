@@ -58,8 +58,9 @@
                             <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Program Minerva</a>
                             <div class="dropdown-menu m-0">
                                 <a href="{{ route('jelajah')}}" class="dropdown-item">Semua Program</a>
-                                <a href="#" class="dropdown-item">Data Analyst</a>
-                                <a href="#" class="dropdown-item">General Event</a>
+                                <a href="{{ route('category-1')}}" class="dropdown-item">General Event</a>
+                                <a href="{{ route('category-2')}}" class="dropdown-item">Mini Course</a>
+                                <a href="{{ route('category-3')}}" class="dropdown-item">Corporate Innovation</a>
                             </div>
                         </div>
                         {{-- <a href="/jelajah" class="nav-item nav-link">Program Minerva</a> --}}

@@ -85,6 +85,12 @@ class PostController extends Controller
         return redirect()->route('post');
     }
 
+    public function CategoryPost($id)
+    {
+        $post = Post::where('category_id', '=', $id)->paginate(8);
+        return view('category', compact('post'));
+    }
+
     public function kontak()
     {
         return view('kontak');

@@ -23,32 +23,42 @@
         </div>
         <ul class="container center nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
             <li class="nav-item">
-                <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill"
-                    href="#tab-1">
-                    <i class="fa fa-coffee fa-2x text-primary"></i>
+                <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                    href="{{ route('jelajah')}}">
+                    <i class="fa fa-user fa-2x text-primary"></i>
                     <div class="ps-3">
                         <small class="text-body">Semua</small>
-                        <h6 class="mt-n1 mb-0">Course</h6>
+                        <h6 class="mt-n1 mb-0">Program</h6>
                     </div>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
-                    href="#tab-2">
-                    <i class="fa fa-hamburger fa-2x text-primary"></i>
-                    <div class="ps-3">
-                        <small class="text-body">Data</small>
-                        <h6 class="mt-n1 mb-0">Intelligence</h6>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill"
-                    href="#tab-3">
-                    <i class="fa fa-user-tie fa-2x text-primary"></i>
+                <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3"
+                    href="{{ route('category-1')}}">
+                    <i class="fa fa-coffee fa-2x text-primary"></i>
                     <div class="ps-3">
                         <small class="text-body">General</small>
+                        <h6 class="mt-n1 mb-0">Event</h6>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="d-flex align-items-center text-start mx-3 pb-3" 
+                    href="{{ route('category-2')}}">
+                    <i class="fa fa-hamburger fa-2x text-primary"></i>
+                    <div class="ps-3">
+                        <small class="text-body">Mini</small>
                         <h6 class="mt-n1 mb-0">Course</h6>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" 
+                    href="{{ route('category-3')}}">
+                    <i class="fa fa-user-tie fa-2x text-primary"></i>
+                    <div class="ps-3">
+                        <small class="text-body">Corporate</small>
+                        <h6 class="mt-n1 mb-0">Innovation</h6>
                     </div>
                 </a>
             </li>

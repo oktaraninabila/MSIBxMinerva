@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2022 at 11:48 AM
+-- Generation Time: Jun 15, 2022 at 09:35 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -39,10 +39,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Data Intelligence', '2022-05-09 01:34:41', '2022-05-09 02:20:37'),
-(2, 'Digital Marketing', '2022-05-09 02:05:22', '2022-05-09 02:20:19'),
-(6, 'Program Class', '2022-05-09 02:20:54', '2022-05-09 02:20:54'),
-(7, 'Exhibition', '2022-05-09 02:21:24', '2022-05-09 02:21:24');
+(1, 'General Event', '2022-05-09 01:34:41', '2022-05-23 06:00:15'),
+(2, 'Mini Course', '2022-05-09 02:05:22', '2022-05-09 02:20:19'),
+(3, 'Corporate Innovation', '2022-05-09 02:20:54', '2022-05-09 02:20:54');
 
 -- --------------------------------------------------------
 
@@ -124,6 +123,7 @@ CREATE TABLE `personal_access_tokens` (
 
 CREATE TABLE `pesertas` (
   `id` bigint(20) UNSIGNED NOT NULL,
+  `post_id` int(11) NOT NULL,
   `nama` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `notelp` bigint(20) NOT NULL,
@@ -137,13 +137,20 @@ CREATE TABLE `pesertas` (
 -- Dumping data for table `pesertas`
 --
 
-INSERT INTO `pesertas` (`id`, `nama`, `email`, `notelp`, `instansi`, `domisili`, `created_at`, `updated_at`) VALUES
-(1, 'Agus Bayu Pamungkas', 'abay@students.unnes.ac.id', 85159000805, 'Universitas Negeri Semarang', 'Purbalingga', NULL, NULL),
-(2, 'alex', 'bayu13.how@gmail.com', 85159000815, 'unnes', 'Purwokerto', '2022-05-06 02:07:21', '2022-05-06 02:07:21'),
-(3, 'alex', 'bayu13.how@gmail.com', 85159000815, 'unnes', 'Purwokerto', '2022-05-06 02:10:11', '2022-05-06 02:10:11'),
-(4, 'alex', 'bayu13.how@gmail.com', 85159000815, 'unnes', 'Purwokerto', '2022-05-06 02:10:35', '2022-05-06 02:10:35'),
-(5, 'alex', 'bayu13.how@gmail.com', 85159000815, 'unnes', 'Purwokerto', '2022-05-06 02:12:31', '2022-05-06 02:12:31'),
-(6, 'budiman', 'babab@fagmail.com', 85159000811, 'BI', 'Semarang', '2022-05-07 09:02:34', '2022-05-07 09:02:34');
+INSERT INTO `pesertas` (`id`, `post_id`, `nama`, `email`, `notelp`, `instansi`, `domisili`, `created_at`, `updated_at`) VALUES
+(1, 11, 'Agus Bayu Pamungkas', 'abay@students.unnes.ac.id', 85159000805, 'Universitas Negeri Semarang', 'Purbalingga', NULL, NULL),
+(2, 11, 'Bambang', 'bpamungkas@gmail.com', 85159000815, 'Persija', 'Jakarta', '2022-05-06 02:07:21', '2022-05-06 02:07:21'),
+(3, 11, 'Alex Gunawan', 'alexander@gmail.com', 85159000815, 'DPR RI', 'Purwokerto', '2022-05-06 02:10:11', '2022-05-06 02:10:11'),
+(6, 11, 'budiman', 'babab@gmail.com', 85159000811, 'BI', 'Semarang', '2022-05-07 09:02:34', '2022-05-07 09:02:34'),
+(7, 11, 'alex', 'abay@students.unnes.ac.id', 85159000815, 'UI', 'Purwokerto', '2022-05-23 05:49:09', '2022-05-23 05:49:09'),
+(8, 11, 'alex', 'stiampemati@gmail.com', 85159000805, 'UI', 'Semarang', '2022-05-24 22:04:23', '2022-05-24 22:04:23'),
+(9, 11, 'budiman', 'adsdasd@gmail.com', 85159000805, 'sadasd', 'Purwokerto', '2022-05-24 22:25:42', '2022-05-24 22:25:42'),
+(10, 7, 'alex', 'bayu13.how@gmail.com', 85159000805, 'unnes', 'Purwokerto', '2022-05-24 22:26:17', '2022-05-24 22:26:17'),
+(11, 7, 'Aprilia Shalystia Putri Pradana', 'apriliashalystia22@gmail.com', 8517893793736, 'UNDIP', 'Bandung', '2022-06-13 17:48:17', '2022-06-13 17:48:17'),
+(12, 7, 'Aprilia Shalystia Putri Pradana', 'abay@students.unnes.ac.id', 8517893793736, 'UNDIP', 'Bandung', '2022-06-13 17:50:20', '2022-06-13 17:50:20'),
+(13, 7, 'Aprilia Shalystia Putri Pradana', 'bayu@gmail.com', 8517893793736, 'UNDIP', 'Bandung', '2022-06-13 17:51:44', '2022-06-13 17:51:44'),
+(14, 11, 'Aprilia Shalystia Putri Pradana', 'abay@students.unnes.ac.id', 8517893793736, 'UNDIP', 'Bandung', '2022-06-13 17:55:43', '2022-06-13 17:55:43'),
+(15, 7, 'Aprilia Shalystia Putri Pradana', 'bayu@gmail.com', 8517893793736, 'UNDIP', 'Bandung', '2022-06-14 03:21:18', '2022-06-14 03:21:18');
 
 -- --------------------------------------------------------
 
@@ -154,12 +161,24 @@ INSERT INTO `pesertas` (`id`, `nama`, `email`, `notelp`, `instansi`, `domisili`,
 CREATE TABLE `posts` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `content` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `price` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` varchar(9999) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `month` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `time` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
   `category_id` bigint(20) UNSIGNED NOT NULL,
   `featured` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`id`, `title`, `price`, `content`, `date`, `month`, `time`, `category_id`, `featured`, `created_at`, `updated_at`) VALUES
+(7, 'International Webinar Center of Data Science 2022', '10.000', 'Center of Data Science (CDS) UII mengadakan agenda webinar bertaraf internasional pada 10-11 Desember 2021 lalu dengan tema “Data Science for Human Life”. Kegiatan ini dilaksanakan secara virtual melalui Zoom. Acara webinar internasional ini diisi oleh 4 orang pembicara, 2 dari internal Jurusan Informatika UII dan 2 pembicara eksternal.\r\n\r\nPembicara pertama disampaikan oleh Dr. Ahmad Luthfi dari Universitas Islam Indonesia. Beliau adalah salah satu dosen Jurusan Informatika UII yang baru saja meraih gelar doktor di Delft University of Technology, Belanda. Beliau menyampaikan materi dengan topik “Data Science for Opening Government Data Decision Making”. Pada sesi pembicara kedua, materi disampaikan oleh Dr. Atika Qazi dari Universiti Brunei Darussalam dengan topik “Covid-19 and Applications of Data Analytics”.', '13', 'Juni', '10:00', 1, 'upload/post/1652156929about-1.jpg', '2022-05-09 21:28:49', '2022-05-09 21:28:49'),
+(11, 'Event Selanjutnya Masih Coming Soon pada Bulan Juni', '20.000', 'sdadas', '17', 'Juni', '13:00', 3, 'upload/post/16524098231652407324about-2.jpg', '2022-05-12 19:43:43', '2022-05-12 19:43:43');
 
 -- --------------------------------------------------------
 
@@ -274,13 +293,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `pesertas`
 --
 ALTER TABLE `pesertas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `users`
