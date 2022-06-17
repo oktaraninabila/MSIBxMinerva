@@ -22,16 +22,23 @@ class PesertaController extends Controller
         return view('daftar-webinar', compact('post'));
     }
 
+    public function grup()
+    {
+        return view('grup');
+    }
+    
     public function insertdaftarwebinar(Request $request){
         Peserta::create($request->all());
         alert()->html('Selamat! Anda Telah Terdaftar',"
-        Selanjutnya konfirmasi pembayaran pada link berikut,
-        <a href='//github.com'><b>klik di sini</b></a>
+        Selanjutnya silahkan bergabung di grup telegram pada link berikut,
+        <a href='https://t.me/Grouppeserta'><b>klik di sini</b></a>
         ",'success');
-        return redirect()-> route('daftarwebinar');
+        return redirect()-> route('grup');
     }
 
     public function excel(){
         return Excel::download(new PesertaExport, 'peserta.xlsx');
     }
+
+    
 }

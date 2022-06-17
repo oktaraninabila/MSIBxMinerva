@@ -27,7 +27,7 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Pendaftaran</h5>
                         <h1 class="text-white mb-4">Daftar Webinar</h1>
-                        <form action="/insertdaftarwebinar" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('insertdaftarwebinar')}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row g-3">
                                 <div class="col-12">
@@ -85,10 +85,10 @@
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Daftar Sekarang</button>
                                 </div>
-                                <div class="col-12">
+                                {{-- <div class="col-12">
                                 <a class="btn btn-secondary w-100 py-3" href="https://t.me/Grouppeserta">Gabung Grup Telegram</a>
                                 </div>
-                                <p class="text-white mb-2">*) Peserta yang telah mendaftar silahkan bergabung ke grup telegram di atas</p>
+                                <p class="text-white mb-2">*) Peserta yang telah mendaftar silahkan bergabung ke grup telegram di atas</p> --}}
                             </div>
                         </form>
                     </div>

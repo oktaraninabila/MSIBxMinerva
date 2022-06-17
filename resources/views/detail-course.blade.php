@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-xxl py-5 bg-dark hero-header mb-5">
     <div class="container text-center my-5 pt-5 pb-4">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">Minerva Bootcamp</h1>
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Minerva Indonesia</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center text-uppercase">
                 <li class="breadcrumb-item"><a href="#"><b>Gali potensi yang selama ini kamu yakini bersama mentor yang ahli di bidangnya,<br/>bakal
@@ -53,8 +53,8 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary py-3 px-5 mt-2" href="/1/daftar-webinar">Daftar Course</a>
-                <a class="btn btn-secondary py-3 px-5 mt-2" href="/jelajah">Lain Kali</a>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('daftarwebinar')}}">Daftar Course</a>
+                <a class="btn btn-secondary py-3 px-5 mt-2" href="{{ route('jelajah')}}">Lain Kali</a>
             </div>
         </div>
     </div>

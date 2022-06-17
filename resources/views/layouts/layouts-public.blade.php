@@ -45,7 +45,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="{{ route('home') }}" class="navbar-brand p-0">
                     <h1 class="text-primary m-0"><img src="{{asset('style/home/img/logo.png')}}" alt="Logo"></i> Minerva</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -80,11 +80,11 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Layanan</h4>
-                        <a class="btn btn-link" href="">Beranda</a>
-                        <a class="btn btn-link" href="">Program Minerva</a>
-                        <a class="btn btn-link" href="">Pendaftaran</a>
-                        <a class="btn btn-link" href="">Tentang kami</a>
-                        <a class="btn btn-link" href="">Kontak</a>
+                        <a class="btn btn-link" href="{{ route('home') }}">Beranda</a>
+                        <a class="btn btn-link" href="{{ route('jelajah')}}">Program Minerva</a>
+                        <a class="btn btn-link" href="{{ route('jelajah')}}">Pendaftaran</a>
+                        <a class="btn btn-link" href="{{ route('tentang-kami')}}">Tentang kami</a>
+                        <a class="btn btn-link" href="{{ route('kontak')}}">Kontak</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Kontak</h4>
@@ -103,10 +103,10 @@
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Media Sosial</h4>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/gama.inovasi/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/gama.berdikari"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UC39qg08CawTSEKe2-aPN8lA"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/pt-gama-inovasi-berdikari/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -124,9 +124,9 @@
                         
                         <div class="col-md-3 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
+                                <a href="{{ route('home') }}">Home</a>
                                <!-- <a href="">Cookies</a> -->
-                                <a href="">Help</a>
+                                <a href="{{ route('kontak')}}">Help</a>
                                 <a href="">FQAs</a>
                             </div>
                         </div>

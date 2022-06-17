@@ -26,6 +26,10 @@ Route::get('/data-course', function () {
     return view('data-course');
 });
 
+// Route::get('/grup', function () {
+//     return view('grup');
+// });
+
 Route::get('/',[BrowseController::class,'home'])->name('home');
 
 Route::get('/login',[AuthController::class,'login'])->name('login'); 
@@ -55,9 +59,10 @@ Route::get('/riwayat',[PostController::class,'riwayat'])->name('riwayat');
 
 Route::get('/dashboard',[AdminController::class,'admin'])->name('admin'); 
 Route::get('/peserta/1',[PesertaController::class,'index'])->name('peserta'); 
-Route::get('/1/daftar-webinar',[PesertaController::class,'daftarwebinar'])->name('daftarwebinar'); 
+Route::get('/daftar-webinar',[PesertaController::class,'daftarwebinar'])->name('daftarwebinar'); 
 Route::post('/insertdaftarwebinar',[PesertaController::class,'insertdaftarwebinar'])->name('insertdaftarwebinar'); 
 Route::get('/excel',[PesertaController::class,'excel'])->name('excel'); 
+Route::get('/grup',[PesertaController::class,'grup'])->name('grup'); 
 
 Route::get('/program-minerva/{id}',[BrowseController::class,'category'])->name('category-course');
 Route::get('/program-minerva/1',[BrowseController::class,'category'])->name('category-1'); 

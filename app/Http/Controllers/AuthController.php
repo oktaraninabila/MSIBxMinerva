@@ -40,7 +40,8 @@ class AuthController extends Controller
 
     public function logout(){
         Auth::logout();
-        Alert::warning('Logout Berhasil!', 'Anda telah keluar dari akun Anda');
+        // Alert::warning('Logout Berhasil!', 'Anda telah keluar dari akun Anda');
+        Alert::toast('Logout Berhasil! Anda telah keluar dari akun Anda', 'warning');
         return redirect('/');
     }
 }

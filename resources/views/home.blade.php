@@ -88,7 +88,7 @@
                 <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Daftar Course</a>
             </div>
             <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                <img class="img-fluid" src="img/hero.png" alt="">
+                <img class="img-fluid" src="{{asset('style/home/img/hero.png')}}" alt="">
             </div>
         </div>
     </div>
@@ -341,19 +341,41 @@
             <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                 <h5 class="section-title ff-secondary text-start text-primary fw-normal">Pendaftaran</h5>
                 <h1 class="text-white mb-4">Daftar Webinar</h1>
-                <form action="/insertdaftarwebinar" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('insertdaftarwebinar')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row g-3">
                         <div class="col-12">
                             <div class="form-floating">
+                                <select class="form-select" name="post_id" value="{{ old('post_id')}}">
+                                  <option value=" ">Nama Event</option>
+                                    @foreach ($post as $item)
+                                        <option value="{{ $item->id }}">{{ $item->title }}</option>
+                                    @endforeach
+                                </select>
+                                <label for="post_id">Pilih Event Yang Diikuti</label>
+                            </div>
+                        </div>
+                        {{-- <div class="col-12">    
+                          <div class="form-group">
+                            <label for="post_id"></label>
+                            <select name="post_id" class="form-control" value="{{ old('post_id')}}">
+                                <option value="">Pilih Event</option>
+                                @foreach ($post as $item)
+                                    <option value="{{ $item->id }}">{{ $item->title }}</option>
+                                @endforeach
+                              </select>
+                          </div>
+                        </div> --}}
+                        <div class="col-12">
+                            <div class="form-floating">
                                 <input type="text" class="form-control" name="nama" id="nama" placeholder="Your Name">
-                                <label for="nama">Nama</label>
+                                <label for="nama">Nama Lengkap</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
                                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
-                                <label for="email">Email</label>
+                                <label for="email">Email Aktif</label>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -377,9 +399,10 @@
                         <div class="col-12">
                             <button class="btn btn-primary w-100 py-3" type="submit">Daftar Sekarang</button>
                         </div>
-                        <div class="col-12">
-                            <a class="btn btn-secondary w-100 py-3" href="#">Konfirmasi Pembayaran</a>
+                        {{-- <div class="col-12">
+                        <a class="btn btn-secondary w-100 py-3" href="https://t.me/Grouppeserta">Gabung Grup Telegram</a>
                         </div>
+                        <p class="text-white mb-2">*) Peserta yang telah mendaftar silahkan bergabung ke grup telegram di atas</p> --}}
                     </div>
                 </form>
             </div>

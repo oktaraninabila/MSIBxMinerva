@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Peserta;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -18,6 +19,15 @@ class BrowseController extends Controller
         $post = Post::all();
 
         return view('home', compact('post'));
+    }
+
+    public function insertdaftarwebinar(Request $request){
+        Peserta::create($request->all());
+        alert()->html('Selamat! Anda Telah Terdaftar',"
+        Selanjutnya silahkan bergabung di grup telegram pada link berikut,
+        <a href='https://t.me/Grouppeserta'><b>klik di sini</b></a>
+        ",'success');
+        return redirect()-> route('grup');
     }
 
     public function index()
