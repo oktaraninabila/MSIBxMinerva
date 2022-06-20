@@ -7,6 +7,23 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    
+    <style>
+        .btn-floating {
+            position: fixed;
+            right: 25px;
+            z-index: 9999;
+            color: 0;
+            transition: 0.2s;
+            bottom: 30px;
+        }
+    
+        .btn-floating:hover {
+            width: auto;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+    </style>
 
     <!-- Favicon -->
     <link href="{{asset('style/home/img/icon.png')}}" rel="icon">
