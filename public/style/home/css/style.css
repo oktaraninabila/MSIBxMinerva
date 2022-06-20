@@ -1,3 +1,18 @@
+.btn-floating {
+    position: fixed;
+    right: 25px;
+    z-index: 9999;
+    color: 0;
+    transition: 0.2s;
+    bottom: 30px;
+}
+
+.btn-floating:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
 /********** Template CSS **********/
 :root {
     --primary: #fea116;

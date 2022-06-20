@@ -22,10 +22,6 @@ Route::get('/popup', function () {
     return view('popup');
 });
 
-Route::get('/data-course', function () {
-    return view('data-course');
-});
-
 // Route::get('/grup', function () {
 //     return view('grup');
 // });
@@ -36,32 +32,40 @@ Route::get('/login',[AuthController::class,'login'])->name('login');
 Route::post('/loginprocess',[AuthController::class,'loginprocess'])->name('loginprocess'); 
 Route::get('/register',[AuthController::class,'register'])->name('register'); 
 Route::post('/registeradmin',[AuthController::class,'registeradmin'])->name('registeradmin'); 
-Route::get('/logout',[AuthController::class,'logout'])->name('logout'); 
-
-Route::get('/categories',[CategoryController::class,'index'])->name('categories'); 
-Route::get('/category/create',[CategoryController::class,'create'])->name('category.create'); 
-Route::post('/category/store',[CategoryController::class,'store'])->name('category.store');
-Route::get('/category/edit/{id}',[CategoryController::class,'edit'])->name('category.edit');  
-Route::post('/category/update/{id}',[CategoryController::class,'update'])->name('category.update'); 
-Route::get('/category/delete/{id}',[CategoryController::class,'delete'])->name('category.delete');   
-
-Route::get('/post',[PostController::class,'index'])->name('post'); 
-Route::get('/post/create',[PostController::class,'create'])->name('post.create'); 
-Route::post('/post/store',[PostController::class,'store'])->name('post.store');
-Route::get('/post/edit/{id}',[PostController::class,'edit'])->name('post.edit');  
-Route::post('/post/update/{id}',[PostController::class,'update'])->name('post.update'); 
-Route::get('/post/delete/{id}',[PostController::class,'delete'])->name('post.delete'); 
+Route::get('/logout',[AuthController::class,'logout'])->name('logout');  
+ 
 Route::get('/kontak',[PostController::class,'kontak'])->name('kontak'); 
 Route::get('/tentang-kami',[PostController::class,'tentang'])->name('tentang-kami');
 Route::get('/riwayat',[PostController::class,'riwayat'])->name('riwayat'); 
 
 // Route::get('/{id}',[BrowseController::class,'detail'])->name('detail'); 
 
-Route::get('/dashboard',[AdminController::class,'admin'])->name('admin'); 
-Route::get('/peserta/1',[PesertaController::class,'index'])->name('peserta'); 
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/categories',[CategoryController::class,'index'])->name('categories'); 
+    Route::get('/category/create',[CategoryController::class,'create'])->name('category.create'); 
+    Route::post('/category/store',[CategoryController::class,'store'])->name('category.store');
+    Route::get('/category/edit/{id}',[CategoryController::class,'edit'])->name('category.edit');  
+    Route::post('/category/update/{id}',[CategoryController::class,'update'])->name('category.update'); 
+    Route::get('/category/delete/{id}',[CategoryController::class,'delete'])->name('category.delete');  
+    
+    Route::get('/post',[PostController::class,'index'])->name('post'); 
+    Route::get('/post/create',[PostController::class,'create'])->name('post.create'); 
+    Route::post('/post/store',[PostController::class,'store'])->name('post.store');
+    Route::get('/post/edit/{id}',[PostController::class,'edit'])->name('post.edit');  
+    Route::post('/post/update/{id}',[PostController::class,'update'])->name('post.update'); 
+    Route::get('/post/delete/{id}',[PostController::class,'delete'])->name('post.delete');
+    
+    Route::get('/dashboard',[AdminController::class,'admin'])->name('admin'); 
+    Route::get('/peserta/1',[PesertaController::class,'index'])->name('peserta');
+
+    Route::get('/data-course', function () {
+        return view('data-course');
+    });
+});
+
 Route::get('/daftar-webinar',[PesertaController::class,'daftarwebinar'])->name('daftarwebinar'); 
 Route::post('/insertdaftarwebinar',[PesertaController::class,'insertdaftarwebinar'])->name('insertdaftarwebinar'); 
-Route::get('/excel',[PesertaController::class,'excel'])->name('excel'); 
+Route::get('/excel',[PesertaController::class,'excel'])->name('excel');  
 Route::get('/grup',[PesertaController::class,'grup'])->name('grup'); 
 
 Route::get('/program-minerva/{id}',[BrowseController::class,'category'])->name('category-course');

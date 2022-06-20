@@ -139,7 +139,12 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        {{-- <a href="https://wa.me/6282228887882" class="back-to-top">
+            <img src="{{asset('style/home/img/WhatsApp3.png')}}" alt="WhatsApp">
+        </a> --}}
+        <a href="https://wa.me/6282228887882" class="btn-floating">
+            <img src="{{asset('style/home/img/WhatsApp3.png')}}" alt="WhatsApp">
+        </a>
     </div>
     
     @yield('popupbanner')

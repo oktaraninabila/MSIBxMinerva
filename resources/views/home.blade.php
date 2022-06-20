@@ -82,14 +82,14 @@
     <div class="container my-5 py-5">
         <div class="row align-items-center g-5">
             <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="display-3 text-white animated slideInLeft">Belajar IT?
-                    <br>Gabungnya Di Minerva</h1>
-                <p class="text-white animated slideInLeft mb-4 pb-2">Kita akan ajarin kamu sampai bener-bener paham dan mendapat keahlian siap kerja untuk karier masa depan kamu.</p>
+                <h1 class="display-3 text-white animated slideInLeft">Belajar Bisnis & Startup?
+                    <br>Di Minerva Aja</h1>
+                <p class="text-white animated slideInLeft mb-4 pb-2">KKita akan mengadakan banyak event dengan isu terkini dengan narasumber yang expert diibidangnya dan pastinya akan semakin meningkatkan skill kamu.</p>
                 <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Daftar Course</a>
             </div>
-            <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+            {{-- <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                 <img class="img-fluid" src="{{asset('style/home/img/hero.png')}}" alt="">
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
