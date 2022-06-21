@@ -554,6 +554,7 @@ class ComposerStaticInitd7631e0dae6c391f7d90001257e156bd
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Exports\\PesertaExport' => __DIR__ . '/../..' . '/app/Exports/PesertaExport.php',
         'App\\Http\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminController.php',
         'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
         'App\\Http\\Controllers\\BrowseController' => __DIR__ . '/../..' . '/app/Http/Controllers/BrowseController.php',
@@ -571,6 +572,7 @@ class ComposerStaticInitd7631e0dae6c391f7d90001257e156bd
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
+        'App\\Models\\Newsletter' => __DIR__ . '/../..' . '/app/Models/Newsletter.php',
         'App\\Models\\Peserta' => __DIR__ . '/../..' . '/app/Models/Peserta.php',
         'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',

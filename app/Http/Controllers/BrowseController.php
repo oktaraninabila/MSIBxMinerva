@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Newsletter;
 use App\Models\Peserta;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
 class BrowseController extends Controller
 {
-    // public function home()
-    // {
-    //     return view('home');
-    // }
+    public function newsletters()
+    {
+        return view('newsletter');
+    }
 
     public function home()
     {
@@ -49,6 +50,19 @@ class BrowseController extends Controller
         $category = Category::find($id);
         $post = Post::where('category_id', '=', $id)->paginate(8);
         return view('category', compact('category', 'post'));
+    }
+
+    public function newsletter(Request $request)
+    {
+        dd($request->all());
+        // $this->validate($request,[
+        //     'email' => 'required'
+        // ]);
+        // $newsletter = new Newsletter();
+        // $newsletter->email = $request->email;
+        // $newsletter->save();
+
+        // return redirect()->route('home');
     }
 
 }

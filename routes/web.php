@@ -27,6 +27,8 @@ Route::get('/popup', function () {
 // });
 
 Route::get('/',[BrowseController::class,'home'])->name('home');
+Route::post('/newsletter',[BrowseController::class,'newsletter'])->name('newsletter'); 
+Route::get('/newsletters',[BrowseController::class,'newsletters'])->name('newsletters'); 
 
 Route::get('/login',[AuthController::class,'login'])->name('login'); 
 Route::post('/loginprocess',[AuthController::class,'loginprocess'])->name('loginprocess'); 
@@ -67,6 +69,7 @@ Route::get('/daftar-webinar',[PesertaController::class,'daftarwebinar'])->name('
 Route::post('/insertdaftarwebinar',[PesertaController::class,'insertdaftarwebinar'])->name('insertdaftarwebinar'); 
 Route::get('/excel',[PesertaController::class,'excel'])->name('excel');  
 Route::get('/grup',[PesertaController::class,'grup'])->name('grup'); 
+
 
 Route::get('/program-minerva/{id}',[BrowseController::class,'category'])->name('category-course');
 Route::get('/program-minerva/1',[BrowseController::class,'category'])->name('category-1'); 

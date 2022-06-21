@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    
+
     <style>
         .btn-floating {
             position: fixed;
@@ -112,10 +112,32 @@
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
                         <p>Ikuti kami dan dapatkan info menarik!</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">daftar</button>
-                        </div>
+                        {{-- <form action="{{route('category.store')}}" method="POST" class="forms-sample">
+                            @csrf
+                            <div class="form-group">
+                              <label for="name">Nama Kategori</label>
+                              <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Nama Kategori">
+                              @error('name')
+                                  <span class="invalid-feedback" role="alert">
+                                    <strong>Nama Kategori harus diisi.</strong>
+                                  </span>
+                              @enderror
+                            </div>
+                            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                            <button class="btn btn-light">Cancel</button>
+                          </form> --}}
+
+                        <form action="{{ route('newsletter')}}" method="POST">
+                            @csrf
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <div class="position-relative mx-auto" style="max-width: 400px;">
+                                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
+                                    {{-- <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">daftar</button> --}}
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        </form>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Media Sosial</h4>
@@ -159,7 +181,7 @@
         {{-- <a href="https://wa.me/6282228887882" class="back-to-top">
             <img src="{{asset('style/home/img/WhatsApp3.png')}}" alt="WhatsApp">
         </a> --}}
-        <a href="https://wa.me/6282228887882" class="btn-floating">
+        <a href="https://wa.me/6282228887882" class="btn-floating" target="WhatsApp">
             <img src="{{asset('style/home/img/WhatsApp3.png')}}" alt="WhatsApp">
         </a>
     </div>
