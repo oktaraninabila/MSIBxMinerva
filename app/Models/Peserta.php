@@ -11,7 +11,7 @@ class Peserta extends Model
 
     // protected $guarded = [];
     protected $fillable = [
-        'post_id', 'nama', 'email', 'notelp', 'instansi', 'domisili'
+        'post_id', 'nama', 'email', 'notelp', 'instansi', 'domisili', 'featured'
     ];
 
     public function posts()

@@ -32,6 +32,7 @@
                 <th>No. Telp</th>
                 <th>Instansi</th>
                 <th>Domisili</th>
+                <th>Bukti Follow</th>
               </tr>
             </thead>
             <tbody>
@@ -44,6 +45,9 @@
                 <td>0{{ $item->notelp }}</td>
                 <td>{{ $item->instansi }}</td>
                 <td>{{ $item->domisili }}</td>
+                <td>
+                  <img src="{{ asset('upload/bukti_ss/'.$item->featured)}}"  
+                </td>
               </tr>
             @endforeach
               

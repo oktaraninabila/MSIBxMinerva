@@ -28,7 +28,12 @@ class PesertaController extends Controller
     }
     
     public function insertdaftarwebinar(Request $request){
-        Peserta::create($request->all());
+        $peserta = Peserta::create($request->all());
+        if($request->hasFile('featured')){
+            $request->file('featured')->move('upload/bukti_ss/', $request->file('featured')->getClientOriginalName());
+            $peserta->featured = $request->file('featured')->getClientOriginalName();
+            $peserta->save();
+        }
         alert()->html('Selamat! Anda Telah Terdaftar',"
         Selanjutnya silahkan bergabung di grup telegram pada link berikut,
         <a href='https://t.me/Grouppeserta'><b>klik di sini</b></a>

@@ -83,6 +83,12 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="file" class="form-control" name="featured">
+                                        <label for="featured">Masukan Bukti ScreenShot Follow Instagram @gama.inovasi</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Daftar Sekarang</button>
                                 </div>
                                 {{-- <div class="col-12">

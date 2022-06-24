@@ -112,7 +112,7 @@
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
                         <p>Ikuti kami dan dapatkan info menarik!</p>
-                        {{-- <form action="{{route('category.store')}}" method="POST" class="forms-sample">
+                        <form action="{{route('category.store')}}" method="POST" class="forms-sample">
                             @csrf
                             <div class="form-group">
                               <label for="name">Nama Kategori</label>
@@ -125,9 +125,9 @@
                             </div>
                             <button type="submit" class="btn btn-primary mr-2">Submit</button>
                             <button class="btn btn-light">Cancel</button>
-                          </form> --}}
+                          </form>
 
-                        <form action="{{ route('newsletter')}}" method="POST">
+                        {{-- <form action="{{ route('newsletter')}}" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label for="email"></label>
@@ -137,7 +137,7 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                        </form>
+                        </form> --}}
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Media Sosial</h4>
