@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Queue\RedisQueue;
+use illuminate\Support\Str;
 
 class PostController extends Controller
 {
@@ -31,6 +32,7 @@ class PostController extends Controller
 
         $post = new Post();
         $post->title = $request->title;
+        $post->slug = Str::slug($request->title);
         $post->category_id = $request->category_id;
         $post->content = $request->content;
         $post->date = $request->date;
