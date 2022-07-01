@@ -15,7 +15,7 @@
         z-index:1000000;
     }
     .pop-content{
-        width:350px;
+        
         height:450px;
         text-align:center;
         display:block;
@@ -84,8 +84,8 @@
             <div class="col-lg-6 text-center text-lg-start">
                 <h1 class="display-3 text-white animated slideInLeft">Belajar Bisnis & Startup?
                     <br>Di Minerva Aja</h1>
-                <p class="text-white animated slideInLeft mb-4 pb-2">KKita akan mengadakan banyak event dengan isu terkini dengan narasumber yang expert diibidangnya dan pastinya akan semakin meningkatkan skill kamu.</p>
-                <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Daftar Course</a>
+                <p class="text-white animated slideInLeft mb-4 pb-2">Tempatnya berbagai event dengan isu terkini dengan narasumber yang expert diibidangnya dan pastinya akan semakin meningkatkan skill kamu.</p>
+                <a href="{{ route('jelajah')}}" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Daftar Course</a>
             </div>
             {{-- <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                 <img class="img-fluid" src="{{asset('style/home/img/hero.png')}}" alt="">
@@ -107,7 +107,7 @@
                 <div class="p-4">
                     <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
                     <h5>Kuasai Materi Belajar Dari Awam</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@
                 <div class="p-4">
                     <i class="fa fa-3x fa-coffee text-primary mb-4"></i>
                     <h5>Sertifikat Belajar Resmi</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -124,8 +124,8 @@
             <div class="service-item rounded pt-3">
                 <div class="p-4">
                     <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                    <h5>Dicariin Kerja</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
+                    <h5>Materi yang Up To Date</h5>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -134,7 +134,7 @@
                 <div class="p-4">
                     <i class="fa fa-3x fa-headset text-primary mb-4"></i>
                     <h5>24/7 Service</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -152,34 +152,31 @@
             <div class="row g-3">
                 <div class="col-6 text-start">
                     <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s"
-                        src="{{asset('style/home/img/about-1.jpg')}}">
+                        src="{{asset('style/home/img/minerva-2.png')}}">
                 </div>
                 <div class="col-6 text-start">
                     <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s"
-                        src="{{asset('style/home/img/about-2.jpg')}}" style="margin-top: 25%;">
+                        src="{{asset('style/home/img/minerva-1.png')}}" style="margin-top: 25%;">
                 </div>
                 <div class="col-6 text-end">
                     <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s"
-                        src="{{asset('style/home/img/about-3.jpg')}}">
+                        src="{{asset('style/home/img/minerva-1.png')}}">
                 </div>
                 <div class="col-6 text-end">
                     <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s"
-                        src="{{asset('style/home/img/about-4.jpg')}}">
+                        src="{{asset('style/home/img/minerva-2.png')}}">
                 </div>
             </div>
         </div>
         <div class="col-lg-6">
             <h5 class="section-title ff-secondary text-start text-primary fw-normal">Tentang kami</h5>
             <h1 class="mb-4">Welcome to <i class="fa fa-user-tie text-primary me-2"></i>Minerva</h1>
-            <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-                diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
-            <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-                diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
-                dolore erat amet</p>
+            <p class="mb-4">Minerva Indonesia adalah sebuah platform yang menawarkan berbagai program yang menarik, up-to-date dan tentunya mengikuti perkembangan teknologi dengan didukung narasumber yang expert di bidangnya. </p>
+            <p class="mb-4">Program di Minerva diklasifikasikan menjadi 3 bidang yaitu General Event, Mini Course dan Corporate Innovation. ...</p>
             <div class="row g-4 mb-4">
                 <div class="col-sm-6">
                     <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                        <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15
+                        <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">5
                         </h1>
                         <div class="ps-4">
                             <p class="mb-0">Tahun</p>
@@ -189,10 +186,11 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                        <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50
+                        <!--data-toggle="counter-up"-->
+                        <h1 class="flex-shrink-0 display-5 text-primary mb-0" >10+
                         </h1>
                         <div class="ps-4">
-                            <p class="mb-0">Mentor</p>
+                            <p class="mb-0">Narasumber</p>
                             <h6 class="text-uppercase mb-0">Populer</h6>
                         </div>
                     </div>
@@ -260,14 +258,14 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="overflow-hidden m-4">
-                        <img class="img-fluid" src="{{asset('style/home/img/about-1.jpg')}}" alt="#">
+                        <img class="img-fluid" src="{{asset('upload/post/Webinar.png')}}" alt="#">
                     </div>
-                    <h5 class="mb-0">International Webinar Center of Data Science 2022</h5>
+                    <h5 class="mb-0">Get to Know More About SEO for Optimizing Your Business Digitally</h5>
                     <br>
                     <small><a class="section-title ff-secondary" href="{{ route('category-1')}}"> General Course</a></small>
-                    <p>Rp. 10.000</p>
+                    <p>Free</p>
                     <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-primary mx-1" href="{{ route('detail-course-7')}}"><small><b>More...</b></small></a>
+                        <a class="btn btn-primary mx-1" href="https://minervaindonesia.id/1"><small><b>More...</b></small></a>
                     </div>
                 </div>
             </div>
@@ -275,12 +273,12 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="overflow-hidden m-4">
-                        <img class="img-fluid" src="{{asset('style/home/img/about-2.jpg')}}" alt="#">
+                        <img class="img-fluid" src="{{asset('upload/post/coming-soon.png')}}" alt="#">
                     </div>
                     <h5 class="mb-0">Event Selanjutnya Masih Coming Soon pada Bulan Juni</h5>
                     <br>
                     <small><a class="section-title ff-secondary" href="#"> Corporate Innovation</a></small>
-                    <p>Rp. 10.000</p>
+                    <p>Free</p>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href="{{ route('detail-course-11')}}"><small><b>More...</b></small></a>
                     </div>
@@ -290,12 +288,12 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="overflow-hidden m-4">
-                        <img class="img-fluid" src="{{asset('style/home/img/about-1.jpg')}}" alt="#">
+                        <img class="img-fluid" src="{{asset('upload/post/coming-soon.png')}}" alt="#">
                     </div>
                     <h5 class="mb-0">Event Selanjutnya Masih Coming Soon pada Bulan Juni</h5>
                     <br>
                     <small><a class="section-title ff-secondary" href="#">Corporate Innovation</a></small>
-                    <p>Rp. 10.000</p>
+                    <p>Free</p>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href="#"><small><b>More...</b></small></a>
                     </div>
@@ -305,12 +303,12 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="overflow-hidden m-4">
-                        <img class="img-fluid" src="{{asset('style/home/img/about-2.jpg')}}" alt="#">
+                        <img class="img-fluid" src="{{asset('upload/post/coming-soon.png')}}" alt="#">
                     </div>
                     <h5 class="mb-0">Event Selanjutnya Masih Coming Soon pada Bulan Juni</h5>
                     <br>
                     <small><a class="section-title ff-secondary" href="#">Mini Course</a></small>
-                    <p>Rp. 10.000</p>
+                    <p>Free</p>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-primary mx-1" href="#"><small><b>More...</b></small></a>
                     </div>
@@ -441,10 +439,10 @@
         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item text-center rounded overflow-hidden">
                 <div class="rounded-circle overflow-hidden m-4">
-                    <img class="img-fluid" src="{{asset('style/home/img/team-1.jpg')}}" alt="">
+                    <img class="img-fluid" src="{{asset('style/home/img/narsum-setiawan.png')}}" alt="">
                 </div>
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+                <h5 class="mb-0">Setiawan Adhiputro</h5>
+                <small>Direktur OVO (PT Visionet Internasional) 2017 – 2019</small>
                 <div class="d-flex justify-content-center mt-3">
                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -455,10 +453,10 @@
         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="team-item text-center rounded overflow-hidden">
                 <div class="rounded-circle overflow-hidden m-4">
-                    <img class="img-fluid" src="{{asset('style/home/img/team-2.jpg')}}" alt="">
+                    <img class="img-fluid" src="{{asset('style/home/img/narsum-nayoko.jpg')}}" alt="">
                 </div>
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+                <h5 class="mb-0">Nayoko Wicaksono</h5>
+                <small>CEO dan Co Founder Algoritma Data Science School</small>
                 <div class="d-flex justify-content-center mt-3">
                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -469,10 +467,10 @@
         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="team-item text-center rounded overflow-hidden">
                 <div class="rounded-circle overflow-hidden m-4">
-                    <img class="img-fluid" src="{{asset('style/home/img/team-3.jpg')}}" alt="">
+                    <img class="img-fluid" src="{{asset('style/home/img/narsum-lucky.png')}}" alt="">
                 </div>
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+                <h5 class="mb-0">Lucky Esa</h5>
+                <small>Coach & Trainer di Asia Entrepreneurship Training Program (AETP)</small>
                 <div class="d-flex justify-content-center mt-3">
                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -483,10 +481,10 @@
         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
             <div class="team-item text-center rounded overflow-hidden">
                 <div class="rounded-circle overflow-hidden m-4">
-                    <img class="img-fluid" src="{{asset('style/home/img/team-4.jpg')}}" alt="">
+                    <img class="img-fluid" src="{{asset('style/home/img/narsum-anugrah1.jpg')}}" alt="">
                 </div>
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+                <h5 class="mb-0">Anugrah Pratama</h5>
+                <small>Associate Partner<br>at EY-Parthenon</small>
                 <div class="d-flex justify-content-center mt-3">
                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -500,7 +498,7 @@
 <!-- Team End -->
 
 
-<!-- Testimonial Start -->
+ <!--Testimonial Start -->
 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
 <div class="container">
     <div class="text-center">
@@ -510,60 +508,56 @@
     <div class="owl-carousel testimonial-carousel">
         <div class="testimonial-item bg-transparent border rounded p-4">
             <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
-                diam</p>
+            <p>Bagus, keseluruhan acara dan pengisi acara tidak membosankan</p>
             <div class="d-flex align-items-center">
                 <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('style/home/img/testimonial-1.jpg')}}"
                     style="width: 50px; height: 50px;">
                 <div class="ps-3">
-                    <h5 class="mb-1">Budi Doremi</h5>
-                    <small>Universitas Negeri Semarang</small>
+                    <h5 class="mb-1">Aulia Salsabilla</h5>
+                    <small>Universitas Mercu Buana</small>
                 </div>
             </div>
         </div>
         <div class="testimonial-item bg-transparent border rounded p-4">
             <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
-                diam</p>
+            <p>Waktunya lebih panjang lagi karena materinya menarik</p>
             <div class="d-flex align-items-center">
                 <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('style/home/img/testimonial-2.')}}jpg"
                     style="width: 50px; height: 50px;">
                 <div class="ps-3">
-                    <h5 class="mb-1">Judika</h5>
-                    <small>Universitas Gajah Mada</small>
+                    <h5 class="mb-1">Rahmat Sandy Cesar Pamungkas</h5>
+                    <small>Universitas Brawijaya</small>
                 </div>
             </div>
         </div>
         <div class="testimonial-item bg-transparent border rounded p-4">
             <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
-                diam</p>
+            <p>Acaranya seru! Penyampaian materi juga keren banget</p>
             <div class="d-flex align-items-center">
                 <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('style/home/img/testimonial-3.jpg')}}"
                     style="width: 50px; height: 50px;">
                 <div class="ps-3">
-                    <h5 class="mb-1">Client Name</h5>
-                    <small>Profession</small>
+                    <h5 class="mb-1">Cristina </h5>
+                    <small>Universitas Internasional Batam</small>
                 </div>
             </div>
         </div>
         <div class="testimonial-item bg-transparent border rounded p-4">
             <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
-                diam</p>
+            <p>No kritik its just so fuuuun... Makasih</p>
             <div class="d-flex align-items-center">
                 <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('style/home/img/testimonial-4.jpg')}}"
                     style="width: 50px; height: 50px;">
                 <div class="ps-3">
-                    <h5 class="mb-1">Xabi Alonso</h5>
-                    <small>Universitas Diponegoro</small>
+                    <h5 class="mb-1">Nuryanti Sainudin</h5>
+                    <small>SETDA KAB.BURU BAGIAN TATA PEMERINTAHAN</small>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </div>
-<!-- Testimonial End -->
+ <!--Testimonial End -->
 @include('sweetalert::alert')
 @endsection
 
@@ -571,9 +565,9 @@
 <div class="popbox hide" id="popbox">
     <div aria-label='Close' class="pop-overlay" onclick='document.getElementById("popbox").style.display="none";removeClassonBody();' role="button" tabindex="0">
         <div class="pop-content">
-            <a href="/7" target="_blank" rel="noopener noreferrer" title="box">
+            <a href="https://minervaindonesia.id/1/" target="_blank" rel="noopener noreferrer" title="box">
                 <div class="popcontent">
-                    <img src="{{asset('style/home/img/about-1.jpg')}}" alt="banner" width="100" height="450"/>
+                    <img src="{{asset('upload/post/Webinar.png')}}" alt="banner" width="100" height="450"/>
                 </div>
             </a>
         <button aria-label='Close' class='popbox-close-button' onclick='document.getElementById("popbox").style.display="none";removeClassonBody();'>&times;</button>
