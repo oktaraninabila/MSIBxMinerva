@@ -562,7 +562,7 @@
 @endsection
 
 @section('popupbanner')
-<div class="popbox hide" id="popbox">
+{{-- <div class="popbox hide" id="popbox">
     <div aria-label='Close' class="pop-overlay" onclick='document.getElementById("popbox").style.display="none";removeClassonBody();' role="button" tabindex="0">
         <div class="pop-content">
             <a href="https://minervaindonesia.id/1/" target="_blank" rel="noopener noreferrer" title="box">
@@ -572,5 +572,5 @@
             </a>
         <button aria-label='Close' class='popbox-close-button' onclick='document.getElementById("popbox").style.display="none";removeClassonBody();'>&times;</button>
     </div>
-</div>
+</div> --}}
 @endsection
