@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Pesan;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Queue\RedisQueue;
@@ -96,6 +97,18 @@ class PostController extends Controller
     public function kontak()
     {
         return view('kontak');
+    }
+
+    public function kontakstore(Request $request)
+    {
+        $pesan = new Pesan();
+        $pesan->name = $request->name;
+        $pesan->email = $request->email;
+        $pesan->subject = $request->subject;
+        $pesan->message = $request->message;
+        $pesan->save();
+
+        return redirect()->route('kontak');
     }
 
     public function tentang()

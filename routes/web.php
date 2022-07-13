@@ -37,6 +37,7 @@ Route::post('/registeradmin',[AuthController::class,'registeradmin'])->name('reg
 Route::get('/logout',[AuthController::class,'logout'])->name('logout');  
  
 Route::get('/kontak',[PostController::class,'kontak'])->name('kontak'); 
+Route::post('/kontak/store',[PostController::class,'kontakstore'])->name('kontakstore'); 
 Route::get('/tentang-kami',[PostController::class,'tentang'])->name('tentang-kami');
 Route::get('/riwayat',[PostController::class,'riwayat'])->name('riwayat'); 
 
