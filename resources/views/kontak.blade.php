@@ -61,7 +61,7 @@
                                 <strong>{{ $message }}</strong>
                         </div>
                         @endif
-                        <form method="post" action="{{ route('sendemail/send')}}">
+                        <form method="post" action="">
                             {{ csrf_field() }}
                             <div class="row g-3">
                                 <div class="col-md-6">

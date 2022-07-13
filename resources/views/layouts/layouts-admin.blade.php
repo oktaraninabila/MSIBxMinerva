@@ -165,15 +165,22 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link" href="/peserta/1">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">Daftar Peserta</span>
             </a>
+          </li> --}}
+          <li class="nav-item">
+            <a class="nav-link" href="/peserta/1">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">Daftar Peserta</span>
+            </a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="/riwayat">
-              <i class="icon-layout menu-icon"></i>
+              <i class="icon-contract menu-icon"></i>
               <span class="menu-title">Riwayat</span>
             </a>
           </li>
@@ -190,6 +197,12 @@
                 <li class="nav-item"> <a class="nav-link" href="{{route('category.create')}}">Tambah Baru</a></li>
               </ul>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pesan">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Pesan Pengguna</span>
+            </a>
           </li>
 {{-- 
           <li class="nav-item">

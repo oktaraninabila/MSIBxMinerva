@@ -22,9 +22,9 @@ Route::get('/popup', function () {
     return view('popup');
 });
 
-// Route::get('/grup', function () {
-//     return view('grup');
-// });
+Route::get('/pesan', function () {
+    return view('pesan');
+});
 
 Route::get('/',[BrowseController::class,'home'])->name('home');
 Route::post('/newsletter',[BrowseController::class,'newsletter'])->name('newsletter'); 
