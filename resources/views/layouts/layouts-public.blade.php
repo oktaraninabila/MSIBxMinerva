@@ -126,18 +126,21 @@
                             <button type="submit" class="btn btn-primary mr-2">Submit</button>
                             <button class="btn btn-light">Cancel</button>
                           </form> --}}
-
-                        <form action="{{ route('newsletter')}}" method="POST">
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">daftar</button>
+                        </div>
+                        {{-- <form action="{{ route('newsletter')}}" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label for="email"></label>
                                 <div class="position-relative mx-auto" style="max-width: 400px;">
-                                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
+                                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Email"> --}}
                                     {{-- <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">daftar</button> --}}
-                                </div>
-                            </div>
+                                {{-- </div>
+                            </div> --}}
                             {{-- <button type="submit" class="btn btn-primary mr-2">Submit</button> --}}
-                        </form>
+                        {{-- </form> --}}
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Media Sosial</h4>

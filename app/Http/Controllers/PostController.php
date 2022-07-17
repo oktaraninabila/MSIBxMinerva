@@ -8,6 +8,7 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Queue\RedisQueue;
 use illuminate\Support\Str;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class PostController extends Controller
 {
@@ -108,6 +109,7 @@ class PostController extends Controller
         $pesan->message = $request->message;
         $pesan->save();
 
+        Alert::success('Selamat!', 'Pesan Anda Berhasil Terkirim');
         return redirect()->route('kontak');
     }
 

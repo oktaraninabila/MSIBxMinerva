@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class CategoryController extends Controller
 {
@@ -27,6 +28,7 @@ class CategoryController extends Controller
         $category->name = $request->name;
         $category->save();
 
+        Alert::toast('Kategori Baru Berhasil Ditambahkan', 'success');
         return redirect()->route('categories');
     }
 
@@ -43,6 +45,7 @@ class CategoryController extends Controller
         $category->name = $request->name;
         $category->save();
 
+        Alert::toast('Kategori Berhasil Disunting', 'success');
         return redirect()->route('categories');
     }
 
@@ -51,6 +54,7 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $category->delete();
 
+        Alert::toast('Kategori Berhasil Dihapus', 'warning');
         return redirect()->route('categories');
     }
 

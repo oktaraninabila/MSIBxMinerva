@@ -6,8 +6,7 @@
         <h1 class="display-3 text-white mb-3 animated slideInDown">Minerva Indonesia</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center text-uppercase">
-                <li class="breadcrumb-item"><a href="#"><b>Gali potensi yang selama ini kamu yakini bersama mentor yang ahli di bidangnya,<br/>bakal
-                    dipandu sampai paham.</b>
+                <li class="breadcrumb-item"><a href="#"><b>TINGKATKAN POTENSI YANG DIRI KAMU PUNYA PADA BERBAGAI BIDANG DENGAN TEPAT<br/>BERSAMA MENTOR YANG EXPERT DI BIDANGNYA</b>
                     </a></li>                
             </ol>
         </nav>
