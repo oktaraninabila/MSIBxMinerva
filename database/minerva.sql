@@ -202,7 +202,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Agus Bayu Pamungkas', 'abay@students.unnes.ac.id', NULL, '$2y$10$Xww.brAIYVHmaLHCkon/6OC98.pn9yxPAQrmYgDki72dL2KRQuIKa', NULL, '2022-05-06 11:10:38', '2022-05-06 11:10:38'),
+(1, 'Agus Bayu Pamungkas', 'abay1@students.unnes.ac.id', NULL, '$2y$10$Xww.brAIYVHmaLHCkon/6OC98.pn9yxPAQrmYgDki72dL2KRQuIKa', NULL, '2022-05-06 11:10:38', '2022-05-06 11:10:38'),
 (2, 'Pamungkas', 'bayu13.how@gmail.com', NULL, '$2y$10$JvfNGWf.uszGCWRLcLIspO4xAXLfKRYE..ouRBDWFT4f3P4hGKUmG', NULL, '2022-05-07 08:57:28', '2022-05-07 08:57:28');
 
 --
